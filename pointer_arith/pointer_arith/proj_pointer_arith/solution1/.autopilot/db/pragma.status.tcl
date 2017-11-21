@@ -1,0 +1,1 @@
+lappend pragmaStatus0 {pragma "INTERFACE" source "/home/vkchcp0030/Documents/learn_hls/pointer_arith/pointer_arith/pointer_arith.c" location "pointer_arith" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}

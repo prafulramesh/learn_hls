@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="pointer_arith.c" path="/home/vkchcp0030/Documents/learn_hls/pointer_arith/pointer_arith/pointer_arith.c"/>
+  </source>
+  <testbench>
+    <originFiles name="result.golden.dat" path="/home/vkchcp0030/Documents/learn_hls/pointer_arith/pointer_arith/result.golden.dat"/>
+    <originFiles name="pointer_arith_test.c" path="/home/vkchcp0030/Documents/learn_hls/pointer_arith/pointer_arith/pointer_arith_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

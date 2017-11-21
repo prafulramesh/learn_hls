@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Nov 21 12:48:47 2017
+# Process ID: 28077
+# Current directory: /home/vkchcp0030/Documents/learn_hls
+# Command line: vivado
+# Log file: /home/vkchcp0030/Documents/learn_hls/vivado.log
+# Journal file: /home/vkchcp0030/Documents/learn_hls/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /media/vkchcp0030/8E7AF0A77AF08D69/projects/2017/msft_hls/work_phase_2/data_handling_out_hls/synth/data_handler.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file '/media/vkchcp0030/8E7AF0A77AF08D69/projects/2017/msft_hls/work_phase_2/data_handling_out_hls/synth/data_handler.sim/tb_top_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory '/media/vkchcp0030/8E7AF0A77AF08D69/projects/2017/msft_hls/work_phase_2/data_handling_out_hls/synth/data_handler.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 6201.180 ; gain = 201.984 ; free physical = 6297 ; free virtual = 26148
+INFO: [Device 21-403] Loading part xcvu9p-flgb2104-2-i
+INFO: [xilinx.com:ip:high_speed_selectio_wiz:3.2-15] high_speed_selectio_wiz_0: metaparam obtained is NONE
+INFO: [xilinx.com:ip:high_speed_selectio_wiz:3.2-11] high_speed_selectio_wiz_0: metaparam obtained is NONE
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property part xc7k325tffg900-3 [current_project]
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property part xcvu9p-flgb2104-2-i [current_project]
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 21 13:05:53 2017...

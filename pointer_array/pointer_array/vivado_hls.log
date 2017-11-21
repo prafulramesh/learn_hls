@@ -1,0 +1,28 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2017.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'vkchcp0030' on host 'vkchcp0030-H270M-D3H' (Linux_x86_64 version 4.10.0-38-generic) on Tue Nov 21 17:42:07 IST 2017
+INFO: [HLS 200-10] On os Ubuntu 16.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/vkchcp0030/Documents/learn_hls/pointer_array/pointer_array'
+INFO: [HLS 200-10] Opening project '/home/vkchcp0030/Documents/learn_hls/pointer_array/pointer_array/proj_pointer_array'.
+INFO: [HLS 200-10] Opening solution '/home/vkchcp0030/Documents/learn_hls/pointer_array/pointer_array/proj_pointer_array/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160tfbg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../pointer_array_test.c in debug mode
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2017.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'vkchcp0030' on host 'vkchcp0030-H270M-D3H' (Linux_x86_64 version 4.10.0-38-generic) on Tue Nov 21 17:42:08 IST 2017
+INFO: [HLS 200-10] On os Ubuntu 16.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/vkchcp0030/Documents/learn_hls/pointer_array/pointer_array/proj_pointer_array/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_vkchcp0030/16131511266328411313
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../pointer_array.c in debug mode
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2017.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'vkchcp0030' on host 'vkchcp0030-H270M-D3H' (Linux_x86_64 version 4.10.0-38-generic) on Tue Nov 21 17:42:08 IST 2017
+INFO: [HLS 200-10] On os Ubuntu 16.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/vkchcp0030/Documents/learn_hls/pointer_array/pointer_array/proj_pointer_array/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_vkchcp0030/16701511266328912262
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+Test passed !
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

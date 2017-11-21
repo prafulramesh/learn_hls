@@ -1,0 +1,20 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../pointer_arith.c in debug mode
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2017.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'vkchcp0030' on host 'vkchcp0030-H270M-D3H' (Linux_x86_64 version 4.10.0-38-generic) on Tue Nov 21 17:24:36 IST 2017
+INFO: [HLS 200-10] On os Ubuntu 16.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/vkchcp0030/Documents/learn_hls/pointer_arith/pointer_arith/proj_pointer_arith/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_vkchcp0030/12401511265276916200
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+Files result.dat and result.golden.dat differ
+ Din Dout
+  0   1
+  1   3
+  2   6
+  3   10
+  4   15
+Test failed  !!!
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

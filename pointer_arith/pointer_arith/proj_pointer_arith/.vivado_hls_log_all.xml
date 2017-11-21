@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:22:57.001+0530"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:22:56.997+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:21:10.575+0530"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:21:10.571+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:20:38.500+0530"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:20:38.495+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:20:05.868+0530"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:20:05.865+0530"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc' is power-on initialization." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T15:29:37.666+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/null/null'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T15:29:36.575+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library '/opt/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/null/null.lib'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T15:29:36.407+0530" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/null/null'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:24:36.497+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library '/opt/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/null/null.lib'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:24:36.383+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/null/null'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:23:36.628+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library '/opt/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/null/null.lib'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:23:36.518+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/null/null'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:22:56.372+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library '/opt/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/null/null.lib'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:22:56.256+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/null/null'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:21:09.975+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library '/opt/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/null/null.lib'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:21:09.864+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/null/null'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:20:37.906+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library '/opt/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/null/null.lib'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:20:37.797+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/null/null'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:20:05.264+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library '/opt/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/null/null.lib'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:20:05.150+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/null/null'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:14:28.986+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library '/opt/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/null/null.lib'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T17:14:28.869+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/null/null'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T15:29:44.730+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library '/opt/Xilinx/Vivado_HLS/2017.2/common/technology/xilinx/null/null.lib'." projectName="proj_pointer_arith" solutionName="solution1" date="2017-11-21T15:29:44.593+0530" type="Warning"/>
+      </csimLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
