@@ -1,0 +1,223 @@
+
+
+================================================================
+== Vivado HLS Report for 'strm_words2bytes'
+================================================================
+* Date:           Mon Oct 30 15:29:16 2017
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        proj_hls_stream
+* Solution:       solution1
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|      2.45|        0.62|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|  745|    1|  745|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+-----+-----+----------+-----------+-----------+---------+----------+
+        |                    |  Latency  | Iteration|  Initiation Interval  |   Trip  |          |
+        |      Loop Name     | min | max |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +--------------------+-----+-----+----------+-----------+-----------+---------+----------+
+        |- WORDS2BYTES_LOOP  |    0|  744|         2|          -|          -| 0 ~ 372 |    no    |
+        +--------------------+-----+-----+----------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 3
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond_i_i)
+3 --> 
+	2  / true
+* FSM state operations: 
+
+ <State 1>: 1.43ns
+ST_1: p_0_i_i (4)  [1/1] 0.00ns
+entry:0  %p_0_i_i = alloca i24
+
+ST_1: StgValue_5 (5)  [1/1] 0.00ns
+entry:1  call void (...)* @_ssdm_op_SpecInterface(i32* %words_in_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str15, i32 0, i32 0, [1 x i8]* @p_str16, [1 x i8]* @p_str17, [1 x i8]* @p_str18, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str19, [1 x i8]* @p_str20)
+
+ST_1: StgValue_6 (6)  [1/1] 0.00ns
+entry:2  call void (...)* @_ssdm_op_SpecInterface(i8* %bytes_out_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind
+
+ST_1: StgValue_7 (7)  [1/1] 0.00ns
+entry:3  call void (...)* @_ssdm_op_SpecInterface(i14* %bytes_out_len_loc, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str79, i32 0, i32 0, [1 x i8]* @p_str80, [1 x i8]* @p_str81, [1 x i8]* @p_str82, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str83, [1 x i8]* @p_str84)
+
+ST_1: bytes_out_len_loc_re (8)  [1/1] 1.43ns
+entry:4  %bytes_out_len_loc_re = call i14 @_ssdm_op_Read.ap_fifo.i14P(i14* %bytes_out_len_loc)
+
+ST_1: StgValue_9 (9)  [1/1] 0.00ns
+entry:5  call void (...)* @_ssdm_op_SpecInterface(i8* %bytes_out_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind
+
+ST_1: tmp_cast_i_i (10)  [1/1] 0.00ns  loc: ./bytestrm_util.h:143->bytestrm_dwordproc.cpp:129
+entry:6  %tmp_cast_i_i = zext i14 %bytes_out_len_loc_re to i17
+
+ST_1: StgValue_11 (11)  [1/1] 1.03ns  loc: ./bytestrm_util.h:143->bytestrm_dwordproc.cpp:129
+entry:7  br label %0
+
+
+ <State 2>: 2.45ns
+ST_2: i_i_i (13)  [1/1] 0.00ns
+:0  %i_i_i = phi i16 [ 0, %entry ], [ %i, %_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EXleT_Li64EEES2_i.exit.i.i ]
+
+ST_2: p_0_i_i_load (14)  [1/1] 0.00ns  loc: ./bytestrm_util.h:143->bytestrm_dwordproc.cpp:129
+:1  %p_0_i_i_load = load i24* %p_0_i_i
+
+ST_2: p_0_cast_i_i (15)  [1/1] 0.00ns  loc: ./bytestrm_util.h:143->bytestrm_dwordproc.cpp:129
+:2  %p_0_cast_i_i = zext i24 %p_0_i_i_load to i32
+
+ST_2: tmp (16)  [1/1] 0.00ns  loc: ./bytestrm_util.h:143->bytestrm_dwordproc.cpp:129
+:3  %tmp = trunc i16 %i_i_i to i2
+
+ST_2: i_cast_i_i (17)  [1/1] 0.00ns  loc: ./bytestrm_util.h:143->bytestrm_dwordproc.cpp:129
+:4  %i_cast_i_i = zext i16 %i_i_i to i17
+
+ST_2: exitcond_i_i (18)  [1/1] 1.96ns  loc: ./bytestrm_util.h:143->bytestrm_dwordproc.cpp:129
+:5  %exitcond_i_i = icmp eq i17 %i_cast_i_i, %tmp_cast_i_i
+
+ST_2: i (19)  [1/1] 1.68ns  loc: ./bytestrm_util.h:143->bytestrm_dwordproc.cpp:129
+:6  %i = add i16 1, %i_i_i
+
+ST_2: StgValue_19 (20)  [1/1] 0.00ns  loc: ./bytestrm_util.h:143->bytestrm_dwordproc.cpp:129
+:7  br i1 %exitcond_i_i, label %.exit, label %1
+
+ST_2: StgValue_20 (22)  [1/1] 0.00ns  loc: ./bytestrm_util.h:143->bytestrm_dwordproc.cpp:129
+:0  call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str3) nounwind
+
+ST_2: tmp_5_i_i (23)  [1/1] 0.00ns  loc: ./bytestrm_util.h:143->bytestrm_dwordproc.cpp:129
+:1  %tmp_5_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str3)
+
+ST_2: StgValue_22 (24)  [1/1] 0.00ns  loc: ./bytestrm_util.h:144->bytestrm_dwordproc.cpp:129
+:2  call void (...)* @_ssdm_op_SpecLoopTripCount(i32 0, i32 372, i32 186, [1 x i8]* @p_str2) nounwind
+
+ST_2: tmp_2_i_i (25)  [1/1] 1.40ns  loc: ./bytestrm_util.h:145->bytestrm_dwordproc.cpp:129
+:3  %tmp_2_i_i = icmp eq i2 %tmp, 0
+
+ST_2: StgValue_24 (26)  [1/1] 1.03ns  loc: ./bytestrm_util.h:145->bytestrm_dwordproc.cpp:129
+:4  br i1 %tmp_2_i_i, label %2, label %_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EXleT_Li64EEES2_i.exit.i.i
+
+ST_2: tmp_4 (28)  [1/1] 1.43ns  loc: ./bytestrm_util.h:146->bytestrm_dwordproc.cpp:129
+:0  %tmp_4 = call i32 @_ssdm_op_Read.ap_fifo.volatile.i32P(i32* %words_in_V)
+
+ST_2: StgValue_26 (29)  [1/1] 1.03ns  loc: ./bytestrm_util.h:148->bytestrm_dwordproc.cpp:129
+:1  br label %_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EXleT_Li64EEES2_i.exit.i.i
+
+ST_2: p_0_1_i_i (31)  [1/1] 0.00ns
+_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EXleT_Li64EEES2_i.exit.i.i:0  %p_0_1_i_i = phi i32 [ %tmp_4, %2 ], [ %p_0_cast_i_i, %1 ]
+
+ST_2: tmpbyte (32)  [1/1] 0.00ns  loc: ./bytestrm_util.h:150->bytestrm_dwordproc.cpp:129
+_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EXleT_Li64EEES2_i.exit.i.i:1  %tmpbyte = trunc i32 %p_0_1_i_i to i8
+
+ST_2: tmpword_V_1_cast_i_i (33)  [1/1] 0.00ns  loc: ./bytestrm_util.h:151->bytestrm_dwordproc.cpp:129
+_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EXleT_Li64EEES2_i.exit.i.i:2  %tmpword_V_1_cast_i_i = call i24 @_ssdm_op_PartSelect.i24.i32.i32.i32(i32 %p_0_1_i_i, i32 8, i32 31)
+
+ST_2: StgValue_30 (34)  [2/2] 0.00ns  loc: ./bytestrm_util.h:156->bytestrm_dwordproc.cpp:129
+_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EXleT_Li64EEES2_i.exit.i.i:3  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %bytes_out_V, i8 %tmpbyte)
+
+ST_2: StgValue_31 (36)  [1/1] 0.00ns  loc: ./bytestrm_util.h:151->bytestrm_dwordproc.cpp:129
+_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EXleT_Li64EEES2_i.exit.i.i:5  store i24 %tmpword_V_1_cast_i_i, i24* %p_0_i_i
+
+ST_2: StgValue_32 (39)  [1/1] 0.00ns
+.exit:0  ret void
+
+
+ <State 3>: 0.00ns
+ST_3: StgValue_33 (34)  [1/2] 0.00ns  loc: ./bytestrm_util.h:156->bytestrm_dwordproc.cpp:129
+_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EXleT_Li64EEES2_i.exit.i.i:3  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %bytes_out_V, i8 %tmpbyte)
+
+ST_3: empty (35)  [1/1] 0.00ns  loc: ./bytestrm_util.h:157->bytestrm_dwordproc.cpp:129
+_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EXleT_Li64EEES2_i.exit.i.i:4  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str3, i32 %tmp_5_i_i)
+
+ST_3: StgValue_35 (37)  [1/1] 0.00ns  loc: ./bytestrm_util.h:143->bytestrm_dwordproc.cpp:129
+_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EXleT_Li64EEES2_i.exit.i.i:6  br label %0
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 1.43ns
+The critical path consists of the following:
+	fifo read on port 'bytes_out_len_loc' [8]  (1.43 ns)
+
+ <State 2>: 2.45ns
+The critical path consists of the following:
+	fifo read on port 'words_in_V' (./bytestrm_util.h:146->bytestrm_dwordproc.cpp:129) [28]  (1.43 ns)
+	multiplexor before 'phi' operation ('inval') with incoming values : ('p_0_cast_i_i', ./bytestrm_util.h:143->bytestrm_dwordproc.cpp:129) ('tmp', ./bytestrm_util.h:146->bytestrm_dwordproc.cpp:129) [31]  (1.03 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

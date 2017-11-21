@@ -1,0 +1,16 @@
+
+
+***************************************************************
+** HLS Tutorial Links
+***************************************************************
+
+
+1. www.xilinx.com/training/vivado
+
+2. Google the following links:
+	i. 	c code to co-processing accelerator on Zynq-7000 all programmable SOCs
+	ii.	Floating-point C based blocks in system generator for DSP
+
+3. Application notes: www.xilinx.com/hls
+
+ 

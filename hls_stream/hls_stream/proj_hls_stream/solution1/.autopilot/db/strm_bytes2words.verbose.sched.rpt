@@ -1,0 +1,210 @@
+
+
+================================================================
+== Vivado HLS Report for 'strm_bytes2words'
+================================================================
+* Date:           Mon Oct 30 15:29:16 2017
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        proj_hls_stream
+* Solution:       solution1
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|      1.96|        0.62|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+------+-----+------+---------+
+    |   Latency  |  Interval  | Pipeline|
+    | min |  max | min |  max |   Type  |
+    +-----+------+-----+------+---------+
+    |    1|  2977|    1|  2977|   none  |
+    +-----+------+-----+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+-----+------+----------+-----------+-----------+----------+----------+
+        |                    |   Latency  | Iteration|  Initiation Interval  |   Trip   |          |
+        |      Loop Name     | min |  max |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +--------------------+-----+------+----------+-----------+-----------+----------+----------+
+        |- BYTES2WORDS_LOOP  |    0|  2976|         2|          -|          -| 0 ~ 1488 |    no    |
+        +--------------------+-----+------+----------+-----------+-----------+----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 3
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond_i)
+3 --> 
+	2  / true
+* FSM state operations: 
+
+ <State 1>: 1.43ns
+ST_1: StgValue_4 (4)  [1/1] 0.00ns
+entry:0  call void (...)* @_ssdm_op_SpecInterface(i32* %words_out_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str9, [1 x i8]* @p_str10, [1 x i8]* @p_str11, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str12, [1 x i8]* @p_str13)
+
+ST_1: StgValue_5 (5)  [1/1] 0.00ns
+entry:1  call void (...)* @_ssdm_op_SpecInterface(i8* %bytes_in_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind
+
+ST_1: StgValue_6 (6)  [1/1] 0.00ns
+entry:2  call void (...)* @_ssdm_op_SpecInterface(i16* %bytestrm_len, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str72, i32 0, i32 0, [1 x i8]* @p_str73, [1 x i8]* @p_str74, [1 x i8]* @p_str75, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str76, [1 x i8]* @p_str77)
+
+ST_1: bytestrm_len_read (7)  [1/1] 1.43ns
+entry:3  %bytestrm_len_read = call i16 @_ssdm_op_Read.ap_fifo.i16P(i16* %bytestrm_len)
+
+ST_1: StgValue_8 (8)  [1/1] 0.00ns
+entry:4  call void (...)* @_ssdm_op_SpecInterface(i8* %bytes_in_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind
+
+ST_1: StgValue_9 (9)  [1/1] 1.03ns  loc: ./bytestrm_util.h:116
+entry:5  br label %0
+
+
+ <State 2>: 1.96ns
+ST_2: r_V (11)  [1/1] 0.00ns  loc: ./bytestrm_util.h:116
+:0  %r_V = phi i24 [ 0, %entry ], [ %phitmp_cast_i, %_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit._crit_edge.i ]
+
+ST_2: i_i (12)  [1/1] 0.00ns
+:1  %i_i = phi i16 [ 0, %entry ], [ %i, %_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit._crit_edge.i ]
+
+ST_2: tmp (13)  [1/1] 0.00ns  loc: ./bytestrm_util.h:116
+:2  %tmp = trunc i16 %i_i to i2
+
+ST_2: exitcond_i (14)  [1/1] 1.96ns  loc: ./bytestrm_util.h:116
+:3  %exitcond_i = icmp eq i16 %i_i, %bytestrm_len_read
+
+ST_2: i (15)  [1/1] 1.68ns  loc: ./bytestrm_util.h:116
+:4  %i = add i16 1, %i_i
+
+ST_2: StgValue_15 (16)  [1/1] 0.00ns  loc: ./bytestrm_util.h:116
+:5  br i1 %exitcond_i, label %.exit, label %_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.i
+
+ST_2: tmp_8 (21)  [2/2] 0.00ns  loc: ./bytestrm_util.h:118
+_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.i:3  %tmp_8 = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %bytes_in_V)
+
+ST_2: tmp_1_i (23)  [1/1] 1.40ns  loc: ./bytestrm_util.h:125
+_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.i:5  %tmp_1_i = icmp eq i2 %tmp, -1
+
+ST_2: StgValue_18 (34)  [1/1] 0.00ns
+.exit:0  ret void
+
+
+ <State 3>: 1.43ns
+ST_3: StgValue_19 (18)  [1/1] 0.00ns  loc: ./bytestrm_util.h:116
+_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.i:0  call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str4) nounwind
+
+ST_3: tmp_8_i (19)  [1/1] 0.00ns  loc: ./bytestrm_util.h:116
+_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.i:1  %tmp_8_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str4)
+
+ST_3: StgValue_21 (20)  [1/1] 0.00ns  loc: ./bytestrm_util.h:117
+_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.i:2  call void (...)* @_ssdm_op_SpecLoopTripCount(i32 0, i32 1488, i32 744, [1 x i8]* @p_str2) nounwind
+
+ST_3: tmp_8 (21)  [1/2] 0.00ns  loc: ./bytestrm_util.h:118
+_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.i:3  %tmp_8 = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %bytes_in_V)
+
+ST_3: r_V_1 (22)  [1/1] 0.00ns  loc: ./bytestrm_util.h:121
+_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.i:4  %r_V_1 = call i32 @_ssdm_op_BitConcatenate.i32.i8.i24(i8 %tmp_8, i24 %r_V)
+
+ST_3: StgValue_24 (24)  [1/1] 0.00ns  loc: ./bytestrm_util.h:125
+_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.i:6  br i1 %tmp_1_i, label %1, label %_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit._crit_edge.i
+
+ST_3: StgValue_25 (26)  [1/1] 1.43ns  loc: ./bytestrm_util.h:126
+:0  call void @_ssdm_op_Write.ap_fifo.volatile.i32P(i32* %words_out_V, i32 %r_V_1)
+
+ST_3: StgValue_26 (27)  [1/1] 0.00ns  loc: ./bytestrm_util.h:126
+:1  br label %_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit._crit_edge.i
+
+ST_3: empty (29)  [1/1] 0.00ns  loc: ./bytestrm_util.h:127
+_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit._crit_edge.i:0  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str4, i32 %tmp_8_i)
+
+ST_3: tmp_5 (30)  [1/1] 0.00ns  loc: ./bytestrm_util.h:116
+_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit._crit_edge.i:1  %tmp_5 = call i16 @_ssdm_op_PartSelect.i16.i24.i32.i32(i24 %r_V, i32 8, i32 23)
+
+ST_3: phitmp_cast_i (31)  [1/1] 0.00ns  loc: ./bytestrm_util.h:116
+_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit._crit_edge.i:2  %phitmp_cast_i = call i24 @_ssdm_op_BitConcatenate.i24.i8.i16(i8 %tmp_8, i16 %tmp_5)
+
+ST_3: StgValue_30 (32)  [1/1] 0.00ns  loc: ./bytestrm_util.h:116
+_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit._crit_edge.i:3  br label %0
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 1.43ns
+The critical path consists of the following:
+	fifo read on port 'bytestrm_len' [7]  (1.43 ns)
+
+ <State 2>: 1.96ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', ./bytestrm_util.h:116) [12]  (0 ns)
+	'icmp' operation ('exitcond_i', ./bytestrm_util.h:116) [14]  (1.96 ns)
+
+ <State 3>: 1.43ns
+The critical path consists of the following:
+	axis read on port 'bytes_in_V' (./bytestrm_util.h:118) [21]  (0 ns)
+	fifo write on port 'words_out_V' (./bytestrm_util.h:126) [26]  (1.43 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

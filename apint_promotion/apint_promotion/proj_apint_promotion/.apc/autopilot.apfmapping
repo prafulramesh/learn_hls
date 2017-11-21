@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="apint_promotion.c" path="/home/vkchcp0030/Documents/learn_hls/apint_promotion/apint_promotion/apint_promotion.c"/>
+  </source>
+  <testbench>
+    <originFiles name="result.golden.dat" path="/home/vkchcp0030/Documents/learn_hls/apint_promotion/apint_promotion/result.golden.dat"/>
+    <originFiles name="apint_promotion_test.c" path="/home/vkchcp0030/Documents/learn_hls/apint_promotion/apint_promotion/apint_promotion_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

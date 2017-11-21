@@ -1,0 +1,257 @@
+
+
+================================================================
+== Vivado HLS Report for 'bytestrm_dwordproc'
+================================================================
+* Date:           Mon Oct 30 15:29:16 2017
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        proj_hls_stream
+* Solution:       solution1
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|      4.33|        0.62|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+------+-----+------+----------+
+    |   Latency  |  Interval  | Pipeline |
+    | min |  max | min |  max |   Type   |
+    +-----+------+-----+------+----------+
+    |    6|  2978|    3|  2978| dataflow |
+    +-----+------+-----+------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 8
+* Pipeline: 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 8, States = { 1 2 3 4 5 6 7 8 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+* FSM state operations: 
+
+ <State 1>: 1.43ns
+ST_1: strm_len_read (4)  [1/1] 0.00ns
+codeRepl:0  %strm_len_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %strm_len)
+
+ST_1: bytes_out_len_loc_ch (5)  [1/1] 0.00ns
+codeRepl:1  %bytes_out_len_loc_ch = alloca i14, align 2
+
+ST_1: strm_len_channel2 (6)  [1/1] 0.00ns
+codeRepl:2  %strm_len_channel2 = alloca i16, align 2
+
+ST_1: strm_len_channel (7)  [1/1] 0.00ns
+codeRepl:3  %strm_len_channel = alloca i16, align 2
+
+ST_1: dwordstrm_in_V (13)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:113
+codeRepl:9  %dwordstrm_in_V = alloca i32, align 4
+
+ST_1: dwordstrm_out_V (16)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:114
+codeRepl:12  %dwordstrm_out_V = alloca i32, align 4
+
+ST_1: StgValue_15 (25)  [1/1] 1.43ns
+codeRepl:21  call fastcc void @bytestrm_dwordproc.e(i16 %strm_len_read, i16* %strm_len_channel, i16* %strm_len_channel2)
+
+
+ <State 2>: 0.00ns
+ST_2: StgValue_16 (29)  [2/2] 0.00ns  loc: bytestrm_dwordproc.cpp:124
+codeRepl:25  call fastcc void @strm_bytes2words(i32* %dwordstrm_in_V, i8* %strm_in_V, i16* nocapture %strm_len_channel)
+
+
+ <State 3>: 0.00ns
+ST_3: StgValue_17 (29)  [1/2] 0.00ns  loc: bytestrm_dwordproc.cpp:124
+codeRepl:25  call fastcc void @strm_bytes2words(i32* %dwordstrm_in_V, i8* %strm_in_V, i16* nocapture %strm_len_channel)
+
+
+ <State 4>: 0.00ns
+ST_4: dwords_in_len_cast_l (28)  [1/1] 0.00ns
+codeRepl:24  %dwords_in_len_cast_l = call fastcc i14 @Block__proc(i16* %strm_len_channel2, i14* %bytes_out_len_loc_ch)
+
+ST_4: StgValue_19 (30)  [2/2] 0.00ns
+codeRepl:26  call fastcc void @decimate_strm(i32* %dwordstrm_out_V, i32* %dwordstrm_in_V, i14 %dwords_in_len_cast_l)
+
+
+ <State 5>: 0.00ns
+ST_5: StgValue_20 (30)  [1/2] 0.00ns
+codeRepl:26  call fastcc void @decimate_strm(i32* %dwordstrm_out_V, i32* %dwordstrm_in_V, i14 %dwords_in_len_cast_l)
+
+
+ <State 6>: 0.00ns
+ST_6: StgValue_21 (31)  [2/2] 0.00ns
+codeRepl:27  call fastcc void @strm_words2bytes(i8* %strm_out_V, i32* %dwordstrm_out_V, i14* nocapture %bytes_out_len_loc_ch)
+
+
+ <State 7>: 0.00ns
+ST_7: StgValue_22 (31)  [1/2] 0.00ns
+codeRepl:27  call fastcc void @strm_words2bytes(i8* %strm_out_V, i32* %dwordstrm_out_V, i14* nocapture %bytes_out_len_loc_ch)
+
+
+ <State 8>: 0.00ns
+ST_8: StgValue_23 (8)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:117
+codeRepl:4  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str2) nounwind
+
+ST_8: StgValue_24 (9)  [1/1] 0.00ns
+codeRepl:5  call void (...)* @_ssdm_op_SpecBitsMap(i8* %strm_out_V), !map !81
+
+ST_8: StgValue_25 (10)  [1/1] 0.00ns
+codeRepl:6  call void (...)* @_ssdm_op_SpecBitsMap(i8* %strm_in_V), !map !85
+
+ST_8: StgValue_26 (11)  [1/1] 0.00ns
+codeRepl:7  call void (...)* @_ssdm_op_SpecBitsMap(i16 %strm_len), !map !89
+
+ST_8: StgValue_27 (12)  [1/1] 0.00ns
+codeRepl:8  call void (...)* @_ssdm_op_SpecTopModule([19 x i8]* @bytestrm_dwordproc_s) nounwind
+
+ST_8: empty (14)  [1/1] 0.00ns
+codeRepl:10  %empty = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @dwordstrm_in_OC_V_st, i32 1, [1 x i8]* @p_str7, [1 x i8]* @p_str7, i32 4, i32 4, i32* %dwordstrm_in_V, i32* %dwordstrm_in_V)
+
+ST_8: StgValue_29 (15)  [1/1] 0.00ns
+codeRepl:11  call void (...)* @_ssdm_op_SpecInterface(i32* %dwordstrm_in_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str9, [1 x i8]* @p_str10, [1 x i8]* @p_str11, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str12, [1 x i8]* @p_str13)
+
+ST_8: empty_16 (17)  [1/1] 0.00ns
+codeRepl:13  %empty_16 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @dwordstrm_out_OC_V_s, i32 1, [1 x i8]* @p_str14, [1 x i8]* @p_str14, i32 1, i32 1, i32* %dwordstrm_out_V, i32* %dwordstrm_out_V)
+
+ST_8: StgValue_31 (18)  [1/1] 0.00ns
+codeRepl:14  call void (...)* @_ssdm_op_SpecInterface(i32* %dwordstrm_out_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str15, i32 0, i32 0, [1 x i8]* @p_str16, [1 x i8]* @p_str17, [1 x i8]* @p_str18, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str19, [1 x i8]* @p_str20)
+
+ST_8: StgValue_32 (19)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:109
+codeRepl:15  call void (...)* @_ssdm_op_SpecInterface(i8* %strm_in_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind
+
+ST_8: StgValue_33 (20)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:110
+codeRepl:16  call void (...)* @_ssdm_op_SpecInterface(i8* %strm_out_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind
+
+ST_8: empty_17 (21)  [1/1] 0.00ns
+codeRepl:17  %empty_17 = call i32 (...)* @_ssdm_op_SpecChannel([17 x i8]* @strm_len_channel_str, i32 1, [1 x i8]* @p_str37, [1 x i8]* @p_str37, i32 1, i32 0, i16* %strm_len_channel, i16* %strm_len_channel)
+
+ST_8: StgValue_35 (22)  [1/1] 0.00ns
+codeRepl:18  call void (...)* @_ssdm_op_SpecInterface(i16* %strm_len_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str38, i32 0, i32 0, [1 x i8]* @p_str39, [1 x i8]* @p_str40, [1 x i8]* @p_str41, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str42, [1 x i8]* @p_str43)
+
+ST_8: empty_18 (23)  [1/1] 0.00ns
+codeRepl:19  %empty_18 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @strm_len_channel2_st, i32 1, [1 x i8]* @p_str44, [1 x i8]* @p_str44, i32 1, i32 0, i16* %strm_len_channel2, i16* %strm_len_channel2)
+
+ST_8: StgValue_37 (24)  [1/1] 0.00ns
+codeRepl:20  call void (...)* @_ssdm_op_SpecInterface(i16* %strm_len_channel2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str45, i32 0, i32 0, [1 x i8]* @p_str46, [1 x i8]* @p_str47, [1 x i8]* @p_str48, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str49, [1 x i8]* @p_str50)
+
+ST_8: empty_19 (26)  [1/1] 0.00ns
+codeRepl:22  %empty_19 = call i32 (...)* @_ssdm_op_SpecChannel([26 x i8]* @bytes_out_len_OC_loc, i32 1, [1 x i8]* @p_str64, [1 x i8]* @p_str64, i32 2, i32 0, i14* %bytes_out_len_loc_ch, i14* %bytes_out_len_loc_ch)
+
+ST_8: StgValue_39 (27)  [1/1] 0.00ns
+codeRepl:23  call void (...)* @_ssdm_op_SpecInterface(i14* %bytes_out_len_loc_ch, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str65, i32 0, i32 0, [1 x i8]* @p_str66, [1 x i8]* @p_str67, [1 x i8]* @p_str68, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str69, [1 x i8]* @p_str70)
+
+ST_8: StgValue_40 (32)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:131
+codeRepl:28  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 1.43ns
+The critical path consists of the following:
+	wire read on port 'strm_len' [4]  (0 ns)
+	'call' operation to 'bytestrm_dwordproc.e' [25]  (1.43 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

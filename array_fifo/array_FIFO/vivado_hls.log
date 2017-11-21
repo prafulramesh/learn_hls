@@ -1,0 +1,79 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2017.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'vkchcp0030' on host 'vkchcp0030-H270M-D3H' (Linux_x86_64 version 4.10.0-38-generic) on Fri Nov 03 17:52:00 IST 2017
+INFO: [HLS 200-10] On os Ubuntu 16.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/vkchcp0030/Documents/learn_hls/array_fifo/array_FIFO'
+INFO: [HLS 200-10] Opening project '/home/vkchcp0030/Documents/learn_hls/array_fifo/array_FIFO/proj_array_FIFO'.
+INFO: [HLS 200-10] Adding design file 'array_FIFO.c' to the project
+INFO: [HLS 200-10] Adding test bench file 'result.golden.dat' to the project
+INFO: [HLS 200-10] Adding test bench file 'array_FIFO_test.c' to the project
+INFO: [HLS 200-10] Opening solution '/home/vkchcp0030/Documents/learn_hls/array_fifo/array_FIFO/proj_array_FIFO/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160tfbg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Analyzing design file 'array_FIFO.c' ... 
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 348.160 ; gain = 12.586 ; free physical = 8432 ; free virtual = 27642
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 348.160 ; gain = 12.586 ; free physical = 8432 ; free virtual = 27640
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 348.160 ; gain = 12.586 ; free physical = 8429 ; free virtual = 27640
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 348.160 ; gain = 12.586 ; free physical = 8429 ; free virtual = 27640
+WARNING: [XFORM 203-124] Array  'd_i' (array_FIFO.c:94): may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 476.156 ; gain = 140.582 ; free physical = 8409 ; free virtual = 27622
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 476.156 ; gain = 140.582 ; free physical = 8417 ; free virtual = 27629
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'array_FIFO' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'array_FIFO' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.5 seconds; current allocated memory: 58.244 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0 seconds; current allocated memory: 58.357 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'array_FIFO' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_FIFO/d_o' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_FIFO/d_i' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_FIFO/idx' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'array_FIFO' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'array_FIFO/idx_address0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'array_FIFO/idx_address0' to 0.
+WARNING: [RTGEN 206-101] Port 'array_FIFO/idx_ce0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'array_FIFO/idx_ce0' to 0.
+WARNING: [RTGEN 206-101] Port 'array_FIFO/idx_we0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'array_FIFO/idx_we0' to 0.
+WARNING: [RTGEN 206-101] Port 'array_FIFO/idx_d0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'array_FIFO/idx_d0' to 0.
+WARNING: [RTGEN 206-101] Port 'array_FIFO/idx_q0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'array_FIFO/idx_address1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'array_FIFO/idx_address1' to 0.
+WARNING: [RTGEN 206-101] Port 'array_FIFO/idx_ce1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'array_FIFO/idx_ce1' to 0.
+WARNING: [RTGEN 206-101] Port 'array_FIFO/idx_we1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'array_FIFO/idx_we1' to 0.
+WARNING: [RTGEN 206-101] Port 'array_FIFO/idx_d1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'array_FIFO/idx_d1' to 0.
+WARNING: [RTGEN 206-101] Port 'array_FIFO/idx_q1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'array_FIFO'.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 58.571 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 476.156 ; gain = 140.582 ; free physical = 8404 ; free virtual = 27618
+INFO: [SYSC 207-301] Generating SystemC RTL for array_FIFO.
+INFO: [VHDL 208-304] Generating VHDL RTL for array_FIFO.
+INFO: [VLOG 209-307] Generating Verilog RTL for array_FIFO.
+INFO: [HLS 200-112] Total elapsed time: 1.65 seconds; peak allocated memory: 58.571 MB.

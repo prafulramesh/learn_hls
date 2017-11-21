@@ -1,0 +1,16 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2017.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'vkchcp0030' on host 'vkchcp0030-H270M-D3H' (Linux_x86_64 version 4.10.0-37-generic) on Thu Oct 26 14:27:02 IST 2017
+INFO: [HLS 200-10] On os Ubuntu 16.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/vkchcp0030/Documents/learn_hls/axi_stream/axi_stream_side_channel_data'
+INFO: [HLS 200-10] Opening project '/home/vkchcp0030/Documents/learn_hls/axi_stream/axi_stream_side_channel_data/proj_axi_stream_side_channel_data'.
+INFO: [HLS 200-10] Opening solution '/home/vkchcp0030/Documents/learn_hls/axi_stream/axi_stream_side_channel_data/proj_axi_stream_side_channel_data/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.3333ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../example_test.cpp in debug mode
+   Compiling ../../../../example.cpp in debug mode
+   Generating csim.exe
+Success: HW and SW results match
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

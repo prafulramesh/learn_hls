@@ -1,0 +1,705 @@
+
+
+================================================================
+== Vivado HLS Report for 'apint_arith'
+================================================================
+* Date:           Mon Oct 30 12:08:22 2017
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        proj_apint_arith
+* Solution:       solution1
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      3.49|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   36|   36|   37|   37|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 37
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	27  / true
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	33  / true
+33 --> 
+	34  / true
+34 --> 
+	35  / true
+35 --> 
+	36  / true
+36 --> 
+	37  / true
+37 --> 
+* FSM state operations: 
+
+ <State 1>: 2.60ns
+ST_1: inD_read (18)  [1/1] 0.00ns
+:9  %inD_read = call i33 @_ssdm_op_Read.ap_auto.i33(i33 %inD) nounwind
+
+ST_1: inA_read (21)  [1/1] 0.00ns
+:12  %inA_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %inA) nounwind
+
+ST_1: tmp_s (33)  [1/1] 0.00ns  loc: apint_arith.c:102
+:24  %tmp_s = sext i6 %inA_read to i33
+
+ST_1: tmp_7 (34)  [37/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 2>: 2.60ns
+ST_2: tmp_7 (34)  [36/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 3>: 2.60ns
+ST_3: tmp_7 (34)  [35/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 4>: 2.60ns
+ST_4: tmp_7 (34)  [34/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 5>: 2.60ns
+ST_5: tmp_7 (34)  [33/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 6>: 2.60ns
+ST_6: tmp_7 (34)  [32/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 7>: 2.60ns
+ST_7: tmp_7 (34)  [31/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 8>: 2.60ns
+ST_8: tmp_7 (34)  [30/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 9>: 2.60ns
+ST_9: tmp_7 (34)  [29/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 10>: 2.60ns
+ST_10: tmp_7 (34)  [28/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 11>: 2.60ns
+ST_11: tmp_7 (34)  [27/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 12>: 3.49ns
+ST_12: inC_read (19)  [1/1] 0.00ns
+:10  %inC_read = call i22 @_ssdm_op_Read.ap_auto.i22(i22 %inC) nounwind
+
+ST_12: inB_read (20)  [1/1] 0.00ns
+:11  %inB_read = call i12 @_ssdm_op_Read.ap_auto.i12(i12 %inB) nounwind
+
+ST_12: tmp (22)  [1/1] 0.00ns  loc: apint_arith.c:99
+:13  %tmp = sext i6 %inA_read to i18
+
+ST_12: tmp_1 (23)  [1/1] 0.00ns  loc: apint_arith.c:99
+:14  %tmp_1 = sext i12 %inB_read to i18
+
+ST_12: tmp_2 (24)  [3/3] 3.49ns  loc: apint_arith.c:99
+:15  %tmp_2 = mul i18 %tmp_1, %tmp
+
+ST_12: tmp_3 (26)  [1/1] 0.00ns  loc: apint_arith.c:100
+:17  %tmp_3 = sext i12 %inB_read to i13
+
+ST_12: tmp_4 (27)  [1/1] 0.00ns  loc: apint_arith.c:100
+:18  %tmp_4 = sext i6 %inA_read to i13
+
+ST_12: tmp_5 (28)  [1/1] 1.67ns  loc: apint_arith.c:100
+:19  %tmp_5 = add i13 %tmp_3, %tmp_4
+
+ST_12: StgValue_60 (29)  [1/1] 0.00ns  loc: apint_arith.c:100
+:20  call void @_ssdm_op_Write.ap_auto.i13P(i13* %out2, i13 %tmp_5) nounwind
+
+ST_12: tmp_7_tr_cast (30)  [1/1] 0.00ns  loc: apint_arith.c:101
+:21  %tmp_7_tr_cast = sext i6 %inA_read to i22
+
+ST_12: tmp_6 (31)  [26/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_12: tmp_7 (34)  [26/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 13>: 3.49ns
+ST_13: tmp_2 (24)  [2/3] 3.49ns  loc: apint_arith.c:99
+:15  %tmp_2 = mul i18 %tmp_1, %tmp
+
+ST_13: tmp_6 (31)  [25/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_13: tmp_7 (34)  [25/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 14>: 2.60ns
+ST_14: tmp_2 (24)  [1/3] 0.00ns  loc: apint_arith.c:99
+:15  %tmp_2 = mul i18 %tmp_1, %tmp
+
+ST_14: StgValue_68 (25)  [1/1] 0.00ns  loc: apint_arith.c:99
+:16  call void @_ssdm_op_Write.ap_auto.i18P(i18* %out1, i18 %tmp_2) nounwind
+
+ST_14: tmp_6 (31)  [24/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_14: tmp_7 (34)  [24/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 15>: 2.60ns
+ST_15: tmp_6 (31)  [23/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_15: tmp_7 (34)  [23/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 16>: 2.60ns
+ST_16: tmp_6 (31)  [22/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_16: tmp_7 (34)  [22/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 17>: 2.60ns
+ST_17: tmp_6 (31)  [21/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_17: tmp_7 (34)  [21/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 18>: 2.60ns
+ST_18: tmp_6 (31)  [20/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_18: tmp_7 (34)  [20/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 19>: 2.60ns
+ST_19: tmp_6 (31)  [19/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_19: tmp_7 (34)  [19/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 20>: 2.60ns
+ST_20: tmp_6 (31)  [18/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_20: tmp_7 (34)  [18/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 21>: 2.60ns
+ST_21: tmp_6 (31)  [17/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_21: tmp_7 (34)  [17/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 22>: 2.60ns
+ST_22: tmp_6 (31)  [16/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_22: tmp_7 (34)  [16/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 23>: 2.60ns
+ST_23: tmp_6 (31)  [15/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_23: tmp_7 (34)  [15/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 24>: 2.60ns
+ST_24: tmp_6 (31)  [14/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_24: tmp_7 (34)  [14/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 25>: 2.60ns
+ST_25: tmp_6 (31)  [13/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_25: tmp_7 (34)  [13/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 26>: 2.60ns
+ST_26: tmp_6 (31)  [12/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_26: tmp_7 (34)  [12/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 27>: 2.60ns
+ST_27: tmp_6 (31)  [11/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_27: tmp_7 (34)  [11/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 28>: 2.60ns
+ST_28: tmp_6 (31)  [10/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_28: tmp_7 (34)  [10/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 29>: 2.60ns
+ST_29: tmp_6 (31)  [9/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_29: tmp_7 (34)  [9/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 30>: 2.60ns
+ST_30: tmp_6 (31)  [8/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_30: tmp_7 (34)  [8/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 31>: 2.60ns
+ST_31: tmp_6 (31)  [7/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_31: tmp_7 (34)  [7/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 32>: 2.60ns
+ST_32: tmp_6 (31)  [6/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_32: tmp_7 (34)  [6/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 33>: 2.60ns
+ST_33: tmp_6 (31)  [5/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_33: tmp_7 (34)  [5/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 34>: 2.60ns
+ST_34: tmp_6 (31)  [4/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_34: tmp_7 (34)  [4/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 35>: 2.60ns
+ST_35: tmp_6 (31)  [3/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_35: tmp_7 (34)  [3/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 36>: 2.60ns
+ST_36: tmp_6 (31)  [2/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_36: tmp_7 (34)  [2/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+
+ <State 37>: 2.60ns
+ST_37: StgValue_115 (9)  [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i6 %inA) nounwind, !map !7
+
+ST_37: StgValue_116 (10)  [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i12 %inB) nounwind, !map !13
+
+ST_37: StgValue_117 (11)  [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i22 %inC) nounwind, !map !17
+
+ST_37: StgValue_118 (12)  [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i33 %inD) nounwind, !map !21
+
+ST_37: StgValue_119 (13)  [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i18* %out1) nounwind, !map !25
+
+ST_37: StgValue_120 (14)  [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecBitsMap(i13* %out2) nounwind, !map !31
+
+ST_37: StgValue_121 (15)  [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecBitsMap(i22* %out3) nounwind, !map !35
+
+ST_37: StgValue_122 (16)  [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecBitsMap(i6* %out4) nounwind, !map !39
+
+ST_37: StgValue_123 (17)  [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecTopModule([12 x i8]* @apint_arith_str) nounwind
+
+ST_37: tmp_6 (31)  [1/26] 2.43ns  loc: apint_arith.c:101
+:22  %tmp_6 = sdiv i22 %inC_read, %tmp_7_tr_cast
+
+ST_37: StgValue_125 (32)  [1/1] 0.00ns  loc: apint_arith.c:101
+:23  call void @_ssdm_op_Write.ap_auto.i22P(i22* %out3, i22 %tmp_6) nounwind
+
+ST_37: tmp_7 (34)  [1/37] 2.60ns  loc: apint_arith.c:102
+:25  %tmp_7 = srem i33 %inD_read, %tmp_s
+
+ST_37: tmp_8 (35)  [1/1] 0.00ns  loc: apint_arith.c:102
+:26  %tmp_8 = trunc i33 %tmp_7 to i6
+
+ST_37: StgValue_128 (36)  [1/1] 0.00ns  loc: apint_arith.c:102
+:27  call void @_ssdm_op_Write.ap_auto.i6P(i6* %out4, i6 %tmp_8) nounwind
+
+ST_37: StgValue_129 (37)  [1/1] 0.00ns  loc: apint_arith.c:104
+:28  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 0.5ns.
+
+ <State 1>: 2.6ns
+The critical path consists of the following:
+	wire read on port 'inD' [18]  (0 ns)
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 2>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 3>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 4>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 5>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 6>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 7>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 8>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 9>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 10>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 11>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 12>: 3.49ns
+The critical path consists of the following:
+	wire read on port 'inB' [20]  (0 ns)
+	'mul' operation ('tmp_2', apint_arith.c:99) [24]  (3.49 ns)
+
+ <State 13>: 3.49ns
+The critical path consists of the following:
+	'mul' operation ('tmp_2', apint_arith.c:99) [24]  (3.49 ns)
+
+ <State 14>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 15>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 16>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 17>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 18>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 19>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 20>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 21>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 22>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 23>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 24>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 25>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 26>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 27>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 28>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 29>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 30>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 31>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 32>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 33>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 34>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 35>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 36>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+ <State 37>: 2.6ns
+The critical path consists of the following:
+	'srem' operation ('tmp_7', apint_arith.c:102) [34]  (2.6 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

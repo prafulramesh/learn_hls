@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="array_FIFO.c" path="/home/vkchcp0030/Documents/learn_hls/array_fifo/array_FIFO/array_FIFO.c"/>
+  </source>
+  <testbench>
+    <originFiles name="result.golden.dat" path="/home/vkchcp0030/Documents/learn_hls/array_fifo/array_FIFO/result.golden.dat"/>
+    <originFiles name="array_FIFO_test.c" path="/home/vkchcp0030/Documents/learn_hls/array_fifo/array_FIFO/array_FIFO_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
