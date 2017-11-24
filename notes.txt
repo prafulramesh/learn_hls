@@ -3,5 +3,10 @@
 				Notes of Vivado HLS 
 ***************************************************************************************
 
+* Don't use __SYNTHESIS__ macro to change functionality.
+* The top level function cannot be a template.
+
+
+
 
 
