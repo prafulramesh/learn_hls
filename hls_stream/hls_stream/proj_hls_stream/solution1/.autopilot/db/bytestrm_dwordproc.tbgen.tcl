@@ -59,155 +59,122 @@ set NewPortList {[
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"],
 		"CDFG" : "bytestrm_dwordproc",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "Dataflow", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "1",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
 		"VariableLatency" : "1",
+		"AlignedPipeline" : "0",
+		"UnalignedPipeline" : "0",
+		"ProcessNetwork" : "1",
+		"Combinational" : "0",
+		"ControlExist" : "1",
+		"Port" : [
+		{"Name" : "strm_out_V", "Type" : "Axis", "Direction" : "O",
+			"SubConnect" : [
+			{"ID" : "5", "SubInstance" : "strm_words2bytes_U0", "Port" : "bytes_out_V"}]},
+		{"Name" : "strm_in_V", "Type" : "Axis", "Direction" : "I",
+			"SubConnect" : [
+			{"ID" : "3", "SubInstance" : "strm_bytes2words_U0", "Port" : "bytes_in_V"}]},
+		{"Name" : "strm_len", "Type" : "None", "Direction" : "I"}],
 		"InputProcess" : [
 			{"ID" : "3", "Name" : "strm_bytes2words_U0", "ReadyCount" : "strm_bytes2words_U0_ap_ready_count"},
 			{"ID" : "1", "Name" : "bytestrm_dwordproc_e_U0", "ReadyCount" : "bytestrm_dwordproc_e_U0_ap_ready_count"}],
 		"OutputProcess" : [
-			{"ID" : "5", "Name" : "strm_words2bytes_U0"}],
-		"Port" : [
-			{"Name" : "strm_out_V", "Type" : "Axis", "Direction" : "O",
-				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "strm_words2bytes_U0", "Port" : "bytes_out_V"}]},
-			{"Name" : "strm_in_V", "Type" : "Axis", "Direction" : "I",
-				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "strm_bytes2words_U0", "Port" : "bytes_in_V"}]},
-			{"Name" : "strm_len", "Type" : "None", "Direction" : "I"}]},
+			{"ID" : "5", "Name" : "strm_words2bytes_U0"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bytestrm_dwordproc_e_U0", "Parent" : "0",
 		"CDFG" : "bytestrm_dwordproc_e",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
-		"Pipeline" : "None", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
 		"VariableLatency" : "0",
+		"AlignedPipeline" : "0",
+		"UnalignedPipeline" : "0",
+		"ProcessNetwork" : "0",
+		"Combinational" : "0",
+		"ControlExist" : "1",
 		"Port" : [
-			{"Name" : "strm_len", "Type" : "None", "Direction" : "I"},
-			{"Name" : "strm_len_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "3", "DependentChan" : "6",
-				"BlockSignal" : [
-					{"Name" : "strm_len_out_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "strm_len_out1", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "2", "DependentChan" : "7",
-				"BlockSignal" : [
-					{"Name" : "strm_len_out1_blk_n", "Type" : "RtlSignal"}]}]},
+		{"Name" : "strm_len", "Type" : "None", "Direction" : "I"},
+		{"Name" : "strm_len_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "3", "DependentChan" : "6",
+			"BlockSignal" : [
+			{"Name" : "strm_len_out_blk_n", "Type" : "RtlSignal"}]},
+		{"Name" : "strm_len_out1", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "2", "DependentChan" : "7",
+			"BlockSignal" : [
+			{"Name" : "strm_len_out1_blk_n", "Type" : "RtlSignal"}]}]},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Block_proc_U0", "Parent" : "0",
 		"CDFG" : "Block_proc",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
-		"Pipeline" : "None", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
 		"VariableLatency" : "0",
-		"StartSource" : "1",
-		"StartFifo" : "start_for_Block_pbkb_U",
+		"AlignedPipeline" : "0",
+		"UnalignedPipeline" : "0",
+		"ProcessNetwork" : "0",
+		"Combinational" : "0",
+		"ControlExist" : "1",
 		"Port" : [
-			{"Name" : "strm_len", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "7",
-				"BlockSignal" : [
-					{"Name" : "strm_len_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "bytes_out_len_out_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "5", "DependentChan" : "8",
-				"BlockSignal" : [
-					{"Name" : "bytes_out_len_out_out_blk_n", "Type" : "RtlSignal"}]}]},
+		{"Name" : "strm_len", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "7",
+			"BlockSignal" : [
+			{"Name" : "strm_len_blk_n", "Type" : "RtlSignal"}]},
+		{"Name" : "bytes_out_len_out_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "5", "DependentChan" : "8",
+			"BlockSignal" : [
+			{"Name" : "bytes_out_len_out_out_blk_n", "Type" : "RtlSignal"}]}]},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.strm_bytes2words_U0", "Parent" : "0",
 		"CDFG" : "strm_bytes2words",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
-		"Pipeline" : "None", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
 		"VariableLatency" : "1",
+		"AlignedPipeline" : "0",
+		"UnalignedPipeline" : "0",
+		"ProcessNetwork" : "0",
+		"Combinational" : "0",
+		"ControlExist" : "1",
 		"Port" : [
-			{"Name" : "words_out_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "4", "DependentChan" : "10",
-				"BlockSignal" : [
-					{"Name" : "words_out_V_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "bytes_in_V", "Type" : "Axis", "Direction" : "I",
-				"BlockSignal" : [
-					{"Name" : "bytes_in_V_TDATA_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "bytestrm_len", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "6",
-				"BlockSignal" : [
-					{"Name" : "bytestrm_len_blk_n", "Type" : "RtlSignal"}]}]},
+		{"Name" : "words_out_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "4", "DependentChan" : "10",
+			"BlockSignal" : [
+			{"Name" : "words_out_V_blk_n", "Type" : "RtlSignal"}]},
+		{"Name" : "bytes_in_V", "Type" : "Axis", "Direction" : "I",
+			"BlockSignal" : [
+			{"Name" : "bytes_in_V_TDATA_blk_n", "Type" : "RtlSignal"}]},
+		{"Name" : "bytestrm_len", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "6",
+			"BlockSignal" : [
+			{"Name" : "bytestrm_len_blk_n", "Type" : "RtlSignal"}]}]},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.decimate_strm_U0", "Parent" : "0",
 		"CDFG" : "decimate_strm",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
-		"Pipeline" : "None", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
 		"VariableLatency" : "1",
+		"AlignedPipeline" : "0",
+		"UnalignedPipeline" : "0",
+		"ProcessNetwork" : "0",
+		"Combinational" : "0",
+		"ControlExist" : "1",
 		"Port" : [
-			{"Name" : "strm_out_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "5", "DependentChan" : "11",
-				"BlockSignal" : [
-					{"Name" : "strm_out_V_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "strm_in_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "3", "DependentChan" : "10",
-				"BlockSignal" : [
-					{"Name" : "strm_in_V_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "strm_len", "Type" : "None", "Direction" : "I", "DependentProc" : "2", "DependentChan" : "9"}]},
+		{"Name" : "strm_out_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "5", "DependentChan" : "11",
+			"BlockSignal" : [
+			{"Name" : "strm_out_V_blk_n", "Type" : "RtlSignal"}]},
+		{"Name" : "strm_in_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "3", "DependentChan" : "10",
+			"BlockSignal" : [
+			{"Name" : "strm_in_V_blk_n", "Type" : "RtlSignal"}]},
+		{"Name" : "strm_len", "Type" : "None", "Direction" : "I", "DependentProc" : "2", "DependentChan" : "9"}]},
 	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.strm_words2bytes_U0", "Parent" : "0",
 		"CDFG" : "strm_words2bytes",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
-		"Pipeline" : "None", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
 		"VariableLatency" : "1",
-		"StartSource" : "2",
-		"StartFifo" : "start_for_strm_wocud_U",
+		"AlignedPipeline" : "0",
+		"UnalignedPipeline" : "0",
+		"ProcessNetwork" : "0",
+		"Combinational" : "0",
+		"ControlExist" : "1",
 		"Port" : [
-			{"Name" : "bytes_out_V", "Type" : "Axis", "Direction" : "O",
-				"BlockSignal" : [
-					{"Name" : "bytes_out_V_TDATA_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "words_in_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "4", "DependentChan" : "11",
-				"BlockSignal" : [
-					{"Name" : "words_in_V_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "bytes_out_len_loc", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "2", "DependentChan" : "8",
-				"BlockSignal" : [
-					{"Name" : "bytes_out_len_loc_blk_n", "Type" : "RtlSignal"}]}]},
+		{"Name" : "bytes_out_V", "Type" : "Axis", "Direction" : "O",
+			"BlockSignal" : [
+			{"Name" : "bytes_out_V_TDATA_blk_n", "Type" : "RtlSignal"}]},
+		{"Name" : "words_in_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "4", "DependentChan" : "11",
+			"BlockSignal" : [
+			{"Name" : "words_in_V_blk_n", "Type" : "RtlSignal"}]},
+		{"Name" : "bytes_out_len_loc", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "2", "DependentChan" : "8",
+			"BlockSignal" : [
+			{"Name" : "bytes_out_len_loc_blk_n", "Type" : "RtlSignal"}]}]},
 	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.strm_len_channel_U", "Parent" : "0"},
 	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.strm_len_channel2_U", "Parent" : "0"},
 	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bytes_out_len_loc_ch_U", "Parent" : "0"},
 	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dwords_in_len_cast_l_U", "Parent" : "0"},
 	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dwordstrm_in_V_U", "Parent" : "0"},
 	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dwordstrm_out_V_U", "Parent" : "0"},
-	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_Block_pbkb_U", "Parent" : "0"},
-	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_strm_wocud_U", "Parent" : "0"}]}
-
-
-set ArgLastReadFirstWriteLatency {
-	bytestrm_dwordproc {
-		strm_out_V {Type O LastRead -1 FirstWrite 1}
-		strm_in_V {Type I LastRead 1 FirstWrite -1}
-		strm_len {Type I LastRead 0 FirstWrite -1}}
-	bytestrm_dwordproc_e {
-		strm_len {Type I LastRead 0 FirstWrite -1}
-		strm_len_out {Type O LastRead -1 FirstWrite 0}
-		strm_len_out1 {Type O LastRead -1 FirstWrite 0}}
-	Block_proc {
-		strm_len {Type I LastRead 0 FirstWrite -1}
-		bytes_out_len_out_out {Type O LastRead -1 FirstWrite 0}}
-	strm_bytes2words {
-		words_out_V {Type O LastRead -1 FirstWrite 2}
-		bytes_in_V {Type I LastRead 1 FirstWrite -1}
-		bytestrm_len {Type I LastRead 0 FirstWrite -1}}
-	decimate_strm {
-		strm_out_V {Type O LastRead -1 FirstWrite 3}
-		strm_in_V {Type I LastRead 2 FirstWrite -1}
-		strm_len {Type I LastRead 0 FirstWrite -1}}
-	strm_words2bytes {
-		bytes_out_V {Type O LastRead -1 FirstWrite 1}
-		words_in_V {Type I LastRead 1 FirstWrite -1}
-		bytes_out_len_loc {Type I LastRead 0 FirstWrite -1}}}
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_Block_phbi_U", "Parent" : "0"},
+	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_strm_woibs_U", "Parent" : "0"}]}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "6", "Max" : "2978"}
+	{"Name" : "Latency", "Min" : "5", "Max" : "2978"}
 	, {"Name" : "Interval", "Min" : "3", "Max" : "2978"}
-]}
-
-set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 

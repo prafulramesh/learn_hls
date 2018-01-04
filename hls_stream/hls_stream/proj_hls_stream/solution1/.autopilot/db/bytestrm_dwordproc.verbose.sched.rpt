@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'bytestrm_dwordproc'
 ================================================================
-* Date:           Mon Oct 30 15:29:16 2017
+* Date:           Sun Dec 24 20:03:13 2017
 
-* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Version:        2016.4 (Build 1733598 on Wed Dec 14 22:59:20 MST 2016)
 * Project:        proj_hls_stream
 * Solution:       solution1
 * Product family: kintex7
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |   5.00|      4.33|        0.62|
+    |ap_clk  |   5.00|      3.76|        0.62|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -29,7 +29,7 @@
     |   Latency  |  Interval  | Pipeline |
     | min |  max | min |  max |   Type   |
     +-----+------+-----+------+----------+
-    |    6|  2978|    3|  2978| dataflow |
+    |    5|  2978|    3|  2978| dataflow |
     +-----+------+-----+------+----------+
 
     + Detail: 
@@ -88,7 +88,7 @@ IsGatedGlobalClock: 0
 8 --> 
 * FSM state operations: 
 
- <State 1>: 1.43ns
+ <State 1>: 1.00ns
 ST_1: strm_len_read (4)  [1/1] 0.00ns
 codeRepl:0  %strm_len_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %strm_len)
 
@@ -107,7 +107,7 @@ codeRepl:9  %dwordstrm_in_V = alloca i32, align 4
 ST_1: dwordstrm_out_V (16)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:114
 codeRepl:12  %dwordstrm_out_V = alloca i32, align 4
 
-ST_1: StgValue_15 (25)  [1/1] 1.43ns
+ST_1: StgValue_15 (25)  [1/1] 1.00ns
 codeRepl:21  call fastcc void @bytestrm_dwordproc.e(i16 %strm_len_read, i16* %strm_len_channel, i16* %strm_len_channel2)
 
 
@@ -206,10 +206,10 @@ codeRepl:28  ret void
 ============================================================
 Target clock period: 5ns, clock uncertainty: 0.625ns.
 
- <State 1>: 1.43ns
+ <State 1>: 1ns
 The critical path consists of the following:
 	wire read on port 'strm_len' [4]  (0 ns)
-	'call' operation to 'bytestrm_dwordproc.e' [25]  (1.43 ns)
+	'call' operation to 'bytestrm_dwordproc.e' [25]  (1 ns)
 
  <State 2>: 0ns
 The critical path consists of the following:

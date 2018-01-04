@@ -75,7 +75,7 @@ entry:2  call void (...)* @_ssdm_op_SpecInterface(i16* %bytestrm_len, [8 x i8]* 
 </operation>
 
 <operation id="7" st_id="1" stage="1" lat="1">
-<core>FIFO_LUTRAM</core>
+<core>FSL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="0">
 <or_exp><and_exp></and_exp></or_exp>
@@ -354,7 +354,7 @@ _ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.i:6  br i1 %tmp_1_
 </operation>
 
 <operation id="25" st_id="3" stage="1" lat="1">
-<core>FIFO_LUTRAM</core>
+<core>FSL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="8">
 <or_exp><and_exp><literal name="tmp_1_i" val="1"/>

@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'Block_proc'
 ================================================================
-* Date:           Mon Oct 30 15:29:16 2017
+* Date:           Sun Dec 24 20:03:13 2017
 
-* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Version:        2016.4 (Build 1733598 on Wed Dec 14 22:59:20 MST 2016)
 * Project:        proj_hls_stream
 * Solution:       solution1
 * Product family: kintex7
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |   5.00|      2.85|        0.62|
+    |ap_clk  |   5.00|      2.00|        0.62|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -73,14 +73,14 @@ IsGatedGlobalClock: 0
 1 --> 
 * FSM state operations: 
 
- <State 1>: 2.85ns
+ <State 1>: 2.00ns
 ST_1: StgValue_2 (3)  [1/1] 0.00ns
 entry:0  call void (...)* @_ssdm_op_SpecInterface(i14* %bytes_out_len_out_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str58, i32 0, i32 0, [1 x i8]* @p_str59, [1 x i8]* @p_str60, [1 x i8]* @p_str61, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str62, [1 x i8]* @p_str63)
 
 ST_1: StgValue_3 (4)  [1/1] 0.00ns
 entry:1  call void (...)* @_ssdm_op_SpecInterface(i16* %strm_len, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str52, i32 0, i32 0, [1 x i8]* @p_str53, [1 x i8]* @p_str54, [1 x i8]* @p_str55, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str56, [1 x i8]* @p_str57)
 
-ST_1: strm_len_read (5)  [1/1] 1.43ns
+ST_1: strm_len_read (5)  [1/1] 1.00ns
 entry:2  %strm_len_read = call i16 @_ssdm_op_Read.ap_fifo.i16P(i16* %strm_len)
 
 ST_1: dwords_in_len_cast_o (6)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:121
@@ -92,7 +92,7 @@ entry:4  %tmp = call i12 @_ssdm_op_PartSelect.i12.i16.i32.i32(i16 %strm_len_read
 ST_1: bytes_out_len (8)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:122
 entry:5  %bytes_out_len = call i14 @_ssdm_op_BitConcatenate.i14.i12.i2(i12 %tmp, i2 0)
 
-ST_1: StgValue_8 (9)  [1/1] 1.43ns  loc: bytestrm_dwordproc.cpp:122
+ST_1: StgValue_8 (9)  [1/1] 1.00ns  loc: bytestrm_dwordproc.cpp:122
 entry:6  call void @_ssdm_op_Write.ap_fifo.i14P(i14* %bytes_out_len_out_out, i14 %bytes_out_len)
 
 ST_1: StgValue_9 (10)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:121
@@ -108,6 +108,7 @@ STG Binding:
 - Is combinational: 0
 - Is one-state seq: 1
 - Is datapath-only: 0
+- Is clock enabled: 0
 - Is pipelined: 0
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0

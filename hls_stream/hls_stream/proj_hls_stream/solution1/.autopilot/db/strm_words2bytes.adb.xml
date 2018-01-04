@@ -90,7 +90,7 @@ entry:3  call void (...)* @_ssdm_op_SpecInterface(i14* %bytes_out_len_loc, [8 x 
 </operation>
 
 <operation id="8" st_id="1" stage="1" lat="1">
-<core>FIFO_LUTRAM</core>
+<core>FSL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="0">
 <or_exp><and_exp></and_exp></or_exp>
@@ -353,7 +353,7 @@ entry:7  br label %0
 </operation>
 
 <operation id="25" st_id="2" stage="1" lat="1">
-<core>FIFO_LUTRAM</core>
+<core>FSL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="5">
 <or_exp><and_exp><literal name="exitcond_i_i" val="0"/>
@@ -538,10 +538,10 @@ _ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EXleT_Li64EEES2_i.exit.i.i:6  br label %0
 <core>NULL</core><StgValue><ssdm name="bytes_out_V"/></StgValue>
 </port>
 <port id="42" name="words_in_V" dir="0" iftype="3">
-<core>FIFO_LUTRAM</core><StgValue><ssdm name="words_in_V"/></StgValue>
+<core>FSL</core><StgValue><ssdm name="words_in_V"/></StgValue>
 </port>
 <port id="43" name="bytes_out_len_loc" dir="0" iftype="3">
-<core>FIFO_LUTRAM</core><StgValue><ssdm name="bytes_out_len_loc"/></StgValue>
+<core>FSL</core><StgValue><ssdm name="bytes_out_len_loc"/></StgValue>
 </port>
 </ports>
 

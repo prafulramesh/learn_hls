@@ -26,7 +26,7 @@
               </inlineStackInfo>
               <originalName/>
               <rtlName/>
-              <coreName>FIFO_LUTRAM</coreName>
+              <coreName>FSL</coreName>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -54,7 +54,7 @@
               </inlineStackInfo>
               <originalName/>
               <rtlName/>
-              <coreName>FIFO_LUTRAM</coreName>
+              <coreName>FSL</coreName>
             </Obj>
             <bitwidth>14</bitwidth>
           </Value>
@@ -113,7 +113,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="11" tracking_level="0" version="0">
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second class_id="12" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -189,7 +189,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -233,7 +233,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -277,7 +277,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -603,7 +603,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="32" tracking_level="0" version="0">
-          <first>ap_block_state1 ( or ) </first>
+          <first>ap_condition_56 ( or ) </first>
           <second class_id="33" tracking_level="0" version="0">
             <count>4</count>
             <item_version>0</item_version>
@@ -621,7 +621,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -635,31 +635,8 @@
         <item_version>0</item_version>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>5</count>
+        <count>4</count>
         <item_version>0</item_version>
-        <item>
-          <first>ap_done</first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>9</second>
-            </item>
-          </second>
-        </item>
         <item>
           <first>ap_return</first>
           <second>
@@ -679,7 +656,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>14</second>
             </item>
           </second>
         </item>
@@ -702,7 +679,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -725,7 +702,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -748,7 +725,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -1078,11 +1055,11 @@
       <item_version>0</item_version>
       <item class_id="52" tracking_level="0" version="0">
         <first>1</first>
-        <second>FIFO_LUTRAM</second>
+        <second>FSL</second>
       </item>
       <item>
         <first>2</first>
-        <second>FIFO_LUTRAM</second>
+        <second>FSL</second>
       </item>
     </port2core>
     <node2core>

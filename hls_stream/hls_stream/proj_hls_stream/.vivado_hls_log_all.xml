@@ -12,11 +12,11 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'Block__proc' to 'Block_proc'." projectName="proj_hls_stream" solutionName="solution1" date="2017-10-30T15:29:16.606+0530" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'bytestrm_dwordproc.e' to 'bytestrm_dwordproc_e'." projectName="proj_hls_stream" solutionName="solution1" date="2017-10-30T15:29:16.595+0530" type="Warning"/>
-        <logs message="WARNING: [XFORM 203-631] Renaming function 'bytestrm_dwordproc.entry23' into bytestrm_dwordproc.e." projectName="proj_hls_stream" solutionName="solution1" date="2017-10-30T15:29:16.591+0530" type="Warning"/>
-        <logs message="WARNING: [XFORM 203-631] Renaming function 'strm_bytes2words&lt;int, (unsigned char)4, false>' (./bytestrm_util.h:116:43) into strm_bytes2words." projectName="proj_hls_stream" solutionName="solution1" date="2017-10-30T15:29:16.508+0530" type="Warning"/>
-        <logs message="WARNING: [XFORM 203-631] Renaming function 'strm_words2bytes&lt;int, (unsigned char)4, false>' (./bytestrm_util.h:143:43) into strm_words2bytes." projectName="proj_hls_stream" solutionName="solution1" date="2017-10-30T15:29:16.482+0530" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'Block__proc' to 'Block_proc'." projectName="proj_hls_stream" solutionName="solution1" date="2017-12-24T20:03:12.660+0530" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'bytestrm_dwordproc.e' to 'bytestrm_dwordproc_e'." projectName="proj_hls_stream" solutionName="solution1" date="2017-12-24T20:03:12.608+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'bytestrm_dwordproc.entry23' into bytestrm_dwordproc.e." projectName="proj_hls_stream" solutionName="solution1" date="2017-12-24T20:03:12.599+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'strm_bytes2words&lt;int, (unsigned char)4, false>' (./bytestrm_util.h:116:43) into strm_bytes2words." projectName="proj_hls_stream" solutionName="solution1" date="2017-12-24T20:03:11.871+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'strm_words2bytes&lt;int, (unsigned char)4, false>' (./bytestrm_util.h:143:43) into strm_words2bytes." projectName="proj_hls_stream" solutionName="solution1" date="2017-12-24T20:03:11.835+0530" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

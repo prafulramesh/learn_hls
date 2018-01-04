@@ -225,7 +225,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="11" tracking_level="0" version="0">
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second class_id="12" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -267,7 +267,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -372,7 +372,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -484,7 +484,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1607,7 +1607,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>47</second>
+              <second>18</second>
             </item>
           </second>
         </item>
@@ -1622,7 +1622,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>38</second>
+              <second>4</second>
             </item>
           </second>
         </item>
@@ -1633,23 +1633,23 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>309</second>
+              <second>72</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>228</second>
+              <second>152</second>
             </item>
           </second>
         </item>
         <item>
-          <first>start_for_Block_pbkb_U (start_for_Block_pbkb)</first>
+          <first>start_for_Block_phbi_U (start_for_Block_phbi)</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>start_for_strm_wocud_U (start_for_strm_wocud)</first>
+          <first>start_for_strm_woibs_U (start_for_strm_woibs)</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -1662,11 +1662,11 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>150</second>
+              <second>97</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>138</second>
+              <second>82</second>
             </item>
           </second>
         </item>
@@ -1677,20 +1677,20 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>147</second>
+              <second>94</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>153</second>
+              <second>90</second>
             </item>
           </second>
         </item>
       </dp_component_resource>
       <dp_expression_resource>
-        <count>12</count>
+        <count>10</count>
         <item_version>0</item_version>
         <item>
-          <first>Block_proc_U0_start_full_n ( or ) </first>
+          <first>ap_hs_ready ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1708,7 +1708,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -1731,7 +1731,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -1754,12 +1754,12 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>1</second>
             </item>
           </second>
         </item>
         <item>
-          <first>ap_sync_ready ( and ) </first>
+          <first>ap_sync_bytestrm_dwordproc_e_U0_ap_start ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1777,7 +1777,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -1800,7 +1800,30 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>1</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>ap_sync_strm_bytes2words_U0_ap_start ( and ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -1819,11 +1842,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>11</second>
+              <second>0</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>8</second>
+              <second>2</second>
             </item>
           </second>
         </item>
@@ -1835,52 +1858,6 @@
             <item>
               <first>(0P0)</first>
               <second>2</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>11</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>8</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>bytestrm_dwordproc_e_U0_ap_start ( and ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>2</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>bytestrm_dwordproc_e_U0_start_full_n ( or ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>1</second>
             </item>
             <item>
               <first>(1P1)</first>
@@ -1911,11 +1888,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>11</second>
+              <second>0</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>8</second>
+              <second>2</second>
             </item>
           </second>
         </item>
@@ -1927,29 +1904,6 @@
             <item>
               <first>(0P0)</first>
               <second>2</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>11</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>8</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>strm_bytes2words_U0_ap_start ( and ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>1</second>
             </item>
             <item>
               <first>(1P1)</first>
@@ -1992,11 +1946,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>0</second>
+              <second>5</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1</second>
+              <second>26</second>
             </item>
           </second>
         </item>
@@ -2042,11 +1996,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>0</second>
+              <second>5</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1</second>
+              <second>44</second>
             </item>
           </second>
         </item>
@@ -2073,11 +2027,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>0</second>
+              <second>5</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1</second>
+              <second>44</second>
             </item>
           </second>
         </item>
@@ -2104,11 +2058,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>0</second>
+              <second>5</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1</second>
+              <second>28</second>
             </item>
           </second>
         </item>
@@ -2135,11 +2089,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>0</second>
+              <second>5</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1</second>
+              <second>28</second>
             </item>
           </second>
         </item>
@@ -2170,7 +2124,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -2193,7 +2147,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -2216,7 +2170,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>2</second>
             </item>
           </second>
         </item>
@@ -2239,7 +2193,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>2</second>
             </item>
           </second>
         </item>
@@ -2380,7 +2334,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>119</item>
+            <item>120</item>
           </second>
         </item>
         <item>
@@ -2388,7 +2342,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>129</item>
+            <item>131</item>
           </second>
         </item>
         <item>
@@ -2396,7 +2350,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>140</item>
+            <item>142</item>
           </second>
         </item>
         <item>
@@ -2404,7 +2358,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>151</item>
+            <item>153</item>
           </second>
         </item>
         <item>
@@ -2412,7 +2366,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>108</item>
+            <item>109</item>
           </second>
         </item>
         <item>

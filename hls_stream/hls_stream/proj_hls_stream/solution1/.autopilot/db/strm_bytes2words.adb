@@ -26,7 +26,7 @@
               </inlineStackInfo>
               <originalName>words_out.V</originalName>
               <rtlName/>
-              <coreName>FIFO_LUTRAM</coreName>
+              <coreName>FSL</coreName>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -82,7 +82,7 @@
               </inlineStackInfo>
               <originalName/>
               <rtlName/>
-              <coreName>FIFO_LUTRAM</coreName>
+              <coreName>FSL</coreName>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -141,7 +141,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="11" tracking_level="0" version="0">
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second class_id="12" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -183,7 +183,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -259,7 +259,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -301,7 +301,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -344,7 +344,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -387,7 +387,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -431,7 +431,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -474,7 +474,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -518,7 +518,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -561,7 +561,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -605,7 +605,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -649,7 +649,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -691,7 +691,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -736,7 +736,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -780,7 +780,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+                  <first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1713,7 +1713,7 @@
         <count>8</count>
         <item_version>0</item_version>
         <item class_id="38" tracking_level="0" version="0">
-          <first>ap_block_state1 ( or ) </first>
+          <first>ap_condition_123 ( or ) </first>
           <second class_id="39" tracking_level="0" version="0">
             <count>4</count>
             <item_version>0</item_version>
@@ -1731,12 +1731,12 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>1</second>
             </item>
           </second>
         </item>
         <item>
-          <first>ap_block_state3 ( or ) </first>
+          <first>ap_condition_145 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1754,7 +1754,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -1777,7 +1777,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -1800,7 +1800,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -1846,7 +1846,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>8</second>
+              <second>6</second>
             </item>
           </second>
         </item>
@@ -1865,11 +1865,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>53</second>
+              <second>0</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>21</second>
+              <second>16</second>
             </item>
           </second>
         </item>
@@ -1906,7 +1906,7 @@
         <item_version>0</item_version>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>9</count>
+        <count>8</count>
         <item_version>0</item_version>
         <item>
           <first>ap_NS_fsm</first>
@@ -1927,30 +1927,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>21</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>ap_done</first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
               <second>1</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>9</second>
             </item>
           </second>
         </item>
@@ -1973,7 +1950,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>8</second>
             </item>
           </second>
         </item>
@@ -1996,7 +1973,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>15</second>
+              <second>2</second>
             </item>
           </second>
         </item>
@@ -2019,7 +1996,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -2042,7 +2019,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -2065,7 +2042,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>16</second>
             </item>
           </second>
         </item>
@@ -2088,7 +2065,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>24</second>
             </item>
           </second>
         </item>
@@ -2111,7 +2088,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>9</second>
+              <second>1</second>
             </item>
           </second>
         </item>
@@ -2985,11 +2962,11 @@
       <item_version>0</item_version>
       <item class_id="59" tracking_level="0" version="0">
         <first>1</first>
-        <second>FIFO_LUTRAM</second>
+        <second>FSL</second>
       </item>
       <item>
         <first>3</first>
-        <second>FIFO_LUTRAM</second>
+        <second>FSL</second>
       </item>
     </port2core>
     <node2core>

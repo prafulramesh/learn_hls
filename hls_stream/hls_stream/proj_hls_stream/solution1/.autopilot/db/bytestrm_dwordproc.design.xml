@@ -5,27 +5,27 @@
 <ModuleName>bytestrm_dwordproc</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>decimate_strm_U0</InstName>
+<InstName>grp_decimate_strm_fu_158</InstName>
 <ModuleName>decimate_strm</ModuleName>
 <ID>158</ID>
 </Instance>
 <Instance>
-<InstName>strm_words2bytes_U0</InstName>
+<InstName>grp_strm_words2bytes_fu_165</InstName>
 <ModuleName>strm_words2bytes</ModuleName>
 <ID>165</ID>
 </Instance>
 <Instance>
-<InstName>strm_bytes2words_U0</InstName>
+<InstName>grp_strm_bytes2words_fu_173</InstName>
 <ModuleName>strm_bytes2words</ModuleName>
 <ID>173</ID>
 </Instance>
 <Instance>
-<InstName>Block_proc_U0</InstName>
+<InstName>dwords_in_len_cast_l_Block_proc_fu_181</InstName>
 <ModuleName>Block_proc</ModuleName>
 <ID>181</ID>
 </Instance>
 <Instance>
-<InstName>bytestrm_dwordproc_e_U0</InstName>
+<InstName>StgValue_15_bytestrm_dwordproc_e_fu_188</InstName>
 <ModuleName>bytestrm_dwordproc_e</ModuleName>
 <ID>188</ID>
 </Instance>
@@ -40,7 +40,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>1.43</EstimatedClockPeriod>
+<EstimatedClockPeriod>1.00</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>0</Best-caseLatency>
@@ -53,7 +53,7 @@
 <AreaEstimates>
 <Resources>
 <FF>3</FF>
-<LUT>38</LUT>
+<LUT>4</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 </Resources>
@@ -254,7 +254,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>2.85</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.00</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>0</Best-caseLatency>
@@ -267,7 +267,7 @@
 <AreaEstimates>
 <Resources>
 <FF>17</FF>
-<LUT>47</LUT>
+<LUT>18</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 </Resources>
@@ -468,7 +468,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>1.96</EstimatedClockPeriod>
+<EstimatedClockPeriod>1.55</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>1</Best-caseLatency>
@@ -494,8 +494,8 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>150</FF>
-<LUT>138</LUT>
+<FF>97</FF>
+<LUT>82</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 </Resources>
@@ -685,13 +685,13 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>4.33</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.76</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>2</Best-caseLatency>
-<Average-caseLatency>187</Average-caseLatency>
-<Worst-caseLatency>375</Worst-caseLatency>
-<PipelineInitiationInterval>2 ~ 375</PipelineInitiationInterval>
+<Average-caseLatency>186</Average-caseLatency>
+<Worst-caseLatency>374</Worst-caseLatency>
+<PipelineInitiationInterval>2 ~ 374</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -703,16 +703,16 @@
 <max>372</max>
 </range>
 </TripCount>
-<Latency>0 ~ 373</Latency>
+<Latency>0 ~ 372</Latency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>3</PipelineDepth>
+<PipelineDepth>2</PipelineDepth>
 </STREAM_LOOP_DECIMATE_LOOP>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>309</FF>
-<LUT>228</LUT>
+<FF>72</FF>
+<LUT>152</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 </Resources>
@@ -880,7 +880,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>2.45</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.08</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>1</Best-caseLatency>
@@ -906,8 +906,8 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>147</FF>
-<LUT>153</LUT>
+<FF>94</FF>
+<LUT>90</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 </Resources>
@@ -1097,10 +1097,10 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>4.33</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.76</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>6</Best-caseLatency>
+<Best-caseLatency>5</Best-caseLatency>
 <Average-caseLatency>1490</Average-caseLatency>
 <Worst-caseLatency>2978</Worst-caseLatency>
 <DataflowPipelineThroughput>
@@ -1116,8 +1116,8 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<FF>676</FF>
-<LUT>693</LUT>
+<FF>314</FF>
+<LUT>536</LUT>
 <DSP48E>0</DSP48E>
 </Resources>
 </AreaEstimates>

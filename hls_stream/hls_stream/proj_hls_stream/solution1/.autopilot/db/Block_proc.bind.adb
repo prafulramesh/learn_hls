@@ -26,7 +26,7 @@
 						</inlineStackInfo>
 						<originalName></originalName>
 						<rtlName></rtlName>
-						<coreName>FIFO_LUTRAM</coreName>
+						<coreName>FSL</coreName>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -54,7 +54,7 @@
 						</inlineStackInfo>
 						<originalName></originalName>
 						<rtlName></rtlName>
-						<coreName>FIFO_LUTRAM</coreName>
+						<coreName>FSL</coreName>
 					</Obj>
 					<bitwidth>14</bitwidth>
 				</Value>
@@ -106,14 +106,14 @@
 						<id>6</id>
 						<name>dwords_in_len_cast_o</name>
 						<fileName>bytestrm_dwordproc.cpp</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>121</lineNumber>
 						<contextFuncName>bytestrm_dwordproc</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="11" tracking_level="0" version="0">
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second class_id="12" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -182,14 +182,14 @@
 						<id>8</id>
 						<name>bytes_out_len</name>
 						<fileName>bytestrm_dwordproc.cpp</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>122</lineNumber>
 						<contextFuncName>bytestrm_dwordproc</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -226,14 +226,14 @@
 						<id>9</id>
 						<name></name>
 						<fileName>bytestrm_dwordproc.cpp</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>122</lineNumber>
 						<contextFuncName>bytestrm_dwordproc</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -270,14 +270,14 @@
 						<id>10</id>
 						<name></name>
 						<fileName>bytestrm_dwordproc.cpp</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>121</lineNumber>
 						<contextFuncName>bytestrm_dwordproc</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -815,11 +815,11 @@
 		<item_version>0</item_version>
 		<item class_id="47" tracking_level="0" version="0">
 			<first>1</first>
-			<second>FIFO_LUTRAM</second>
+			<second>FSL</second>
 		</item>
 		<item>
 			<first>2</first>
-			<second>FIFO_LUTRAM</second>
+			<second>FSL</second>
 		</item>
 	</port2core>
 	<node2core>

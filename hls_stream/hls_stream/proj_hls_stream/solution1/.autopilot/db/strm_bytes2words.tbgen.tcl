@@ -59,38 +59,28 @@ set NewPortList {[
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
 		"CDFG" : "strm_bytes2words",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
-		"Pipeline" : "None", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
 		"VariableLatency" : "1",
+		"AlignedPipeline" : "0",
+		"UnalignedPipeline" : "0",
+		"ProcessNetwork" : "0",
+		"Combinational" : "0",
+		"ControlExist" : "1",
 		"Port" : [
-			{"Name" : "words_out_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "0", "DependentChan" : "0",
-				"BlockSignal" : [
-					{"Name" : "words_out_V_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "bytes_in_V", "Type" : "Axis", "Direction" : "I",
-				"BlockSignal" : [
-					{"Name" : "bytes_in_V_TDATA_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "bytestrm_len", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0",
-				"BlockSignal" : [
-					{"Name" : "bytestrm_len_blk_n", "Type" : "RtlSignal"}]}]}]}
-
-
-set ArgLastReadFirstWriteLatency {
-	strm_bytes2words {
-		words_out_V {Type O LastRead -1 FirstWrite 2}
-		bytes_in_V {Type I LastRead 1 FirstWrite -1}
-		bytestrm_len {Type I LastRead 0 FirstWrite -1}}}
+		{"Name" : "words_out_V", "Type" : "Fifo", "Direction" : "O",
+			"BlockSignal" : [
+			{"Name" : "words_out_V_blk_n", "Type" : "RtlSignal"}]},
+		{"Name" : "bytes_in_V", "Type" : "Axis", "Direction" : "I",
+			"BlockSignal" : [
+			{"Name" : "bytes_in_V_TDATA_blk_n", "Type" : "RtlSignal"}]},
+		{"Name" : "bytestrm_len", "Type" : "Fifo", "Direction" : "I",
+			"BlockSignal" : [
+			{"Name" : "bytestrm_len_blk_n", "Type" : "RtlSignal"}]}]}]}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
 	{"Name" : "Latency", "Min" : "1", "Max" : "2977"}
 	, {"Name" : "Interval", "Min" : "1", "Max" : "2977"}
-]}
-
-set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 

@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'decimate_strm'
 ================================================================
-* Date:           Mon Oct 30 15:29:16 2017
+* Date:           Sun Dec 24 20:03:13 2017
 
-* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Version:        2016.4 (Build 1733598 on Wed Dec 14 22:59:20 MST 2016)
 * Project:        proj_hls_stream
 * Solution:       solution1
 * Product family: kintex7
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |   5.00|      4.33|        0.62|
+    |ap_clk  |   5.00|      3.76|        0.62|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -29,7 +29,7 @@
     |  Latency  |  Interval | Pipeline|
     | min | max | min | max |   Type  |
     +-----+-----+-----+-----+---------+
-    |    2|  375|    2|  375|   none  |
+    |    2|  374|    2|  374|   none  |
     +-----+-----+-----+-----+---------+
 
     + Detail: 
@@ -41,7 +41,7 @@
         |                             |  Latency  | Iteration|  Initiation Interval  |   Trip  |          |
         |          Loop Name          | min | max |  Latency |  achieved |   target  |  Count  | Pipelined|
         +-----------------------------+-----+-----+----------+-----------+-----------+---------+----------+
-        |- STREAM_LOOP_DECIMATE_LOOP  |    0|  373|         3|          1|          1| 0 ~ 372 |    yes   |
+        |- STREAM_LOOP_DECIMATE_LOOP  |    0|  372|         2|          1|          1| 0 ~ 372 |    yes   |
         +-----------------------------+-----+-----+----------+-----------+-----------+---------+----------+
 
 ============================================================
@@ -67,35 +67,33 @@ HasImplIP: 0
 IsGatedGlobalClock: 0
 
 + Individual pipeline summary: 
-  * Pipeline-0: initiation interval (II) = 1, depth = 3
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
 
 
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states: 5
+* Number of FSM states: 4
 * Pipeline: 1
-  Pipeline-0: II = 1, D = 3, States = { 2 3 4 }
+  Pipeline-0: II = 1, D = 2, States = { 2 3 }
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
 1 --> 
 	2  / true
 2 --> 
-	5  / (exitcond_flatten)
+	4  / (exitcond_flatten)
 	3  / (!exitcond_flatten)
 3 --> 
-	4  / true
-4 --> 
 	2  / true
-5 --> 
+4 --> 
 * FSM state operations: 
 
- <State 1>: 1.03ns
-ST_1: StgValue_6 (4)  [1/1] 0.00ns
+ <State 1>: 1.08ns
+ST_1: StgValue_5 (4)  [1/1] 0.00ns
 entry:0  call void (...)* @_ssdm_op_SpecInterface(i32* %strm_out_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str15, i32 0, i32 0, [1 x i8]* @p_str16, [1 x i8]* @p_str17, [1 x i8]* @p_str18, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str19, [1 x i8]* @p_str20)
 
-ST_1: StgValue_7 (5)  [1/1] 0.00ns
+ST_1: StgValue_6 (5)  [1/1] 0.00ns
 entry:1  call void (...)* @_ssdm_op_SpecInterface(i32* %strm_in_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str9, [1 x i8]* @p_str10, [1 x i8]* @p_str11, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str12, [1 x i8]* @p_str13)
 
 ST_1: strm_len_read (6)  [1/1] 0.00ns
@@ -107,11 +105,11 @@ entry:3  %tmp_7 = call i12 @_ssdm_op_PartSelect.i12.i14.i32.i32(i14 %strm_len_re
 ST_1: tmp_8 (8)  [1/1] 0.00ns
 entry:4  %tmp_8 = call i14 @_ssdm_op_BitConcatenate.i14.i12.i2(i12 %tmp_7, i2 0)
 
-ST_1: StgValue_11 (9)  [1/1] 1.03ns  loc: bytestrm_dwordproc.cpp:143->bytestrm_dwordproc.cpp:127
+ST_1: StgValue_10 (9)  [1/1] 1.08ns  loc: bytestrm_dwordproc.cpp:143->bytestrm_dwordproc.cpp:127
 entry:5  br label %0
 
 
- <State 2>: 4.33ns
+ <State 2>: 2.92ns
 ST_2: indvar_flatten (11)  [1/1] 0.00ns
 :0  %indvar_flatten = phi i14 [ 0, %entry ], [ %indvar_flatten_next, %._crit_edge.i ]
 
@@ -121,79 +119,77 @@ ST_2: j_i (12)  [1/1] 0.00ns
 ST_2: acc_i (13)  [1/1] 0.00ns
 :2  %acc_i = phi i34 [ 0, %entry ], [ %acc, %._crit_edge.i ]
 
-ST_2: exitcond_flatten (14)  [1/1] 1.94ns
+ST_2: exitcond_flatten (14)  [1/1] 1.51ns
 :3  %exitcond_flatten = icmp eq i14 %indvar_flatten, %tmp_8
 
-ST_2: indvar_flatten_next (15)  [1/1] 1.68ns
+ST_2: indvar_flatten_next (15)  [1/1] 1.46ns
 :4  %indvar_flatten_next = add i14 %indvar_flatten, 1
 
-ST_2: StgValue_17 (16)  [1/1] 0.00ns
+ST_2: StgValue_16 (16)  [1/1] 0.00ns
 :5  br i1 %exitcond_flatten, label %decimate_strm.exit, label %.reset
 
-ST_2: tmp_3_i3 (20)  [1/1] 1.40ns  loc: bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127
+ST_2: tmp_3_i3 (20)  [1/1] 1.04ns  loc: bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127
 .reset:2  %tmp_3_i3 = icmp eq i3 %j_i, -4
 
-ST_2: j_i_mid2 (21)  [1/1] 1.40ns  loc: bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127
+ST_2: j_i_mid2 (21)  [1/1] 0.84ns  loc: bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127
 .reset:3  %j_i_mid2 = select i1 %tmp_3_i3, i3 0, i3 %j_i
 
-ST_2: tmp_5_i (29)  [1/1] 1.40ns  loc: bytestrm_dwordproc.cpp:152->bytestrm_dwordproc.cpp:127
+ST_2: tmp_5_i (29)  [1/1] 1.04ns  loc: bytestrm_dwordproc.cpp:152->bytestrm_dwordproc.cpp:127
 .reset:11  %tmp_5_i = icmp eq i3 %j_i_mid2, 3
 
-ST_2: StgValue_21 (30)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:152->bytestrm_dwordproc.cpp:127
+ST_2: StgValue_20 (30)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:152->bytestrm_dwordproc.cpp:127
 .reset:12  br i1 %tmp_5_i, label %1, label %._crit_edge.i
 
-ST_2: j (37)  [1/1] 1.54ns  loc: bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127
+ST_2: j (37)  [1/1] 0.48ns  loc: bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127
 ._crit_edge.i:1  %j = add i3 %j_i_mid2, 1
 
 
- <State 3>: 3.17ns
+ <State 3>: 3.76ns
+ST_3: StgValue_22 (18)  [1/1] 0.00ns
+.reset:0  call void (...)* @_ssdm_op_SpecLoopName([26 x i8]* @STREAM_LOOP_DECIMATE)
+
+ST_3: StgValue_23 (19)  [1/1] 0.00ns
+.reset:1  call void (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 372, i64 184)
+
 ST_3: acc_i_mid2 (22)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127 (grouped into LUT with out node acc)
 .reset:4  %acc_i_mid2 = select i1 %tmp_3_i3, i34 0, i34 %acc_i
 
-ST_3: tmp (26)  [1/1] 1.43ns  loc: bytestrm_dwordproc.cpp:149->bytestrm_dwordproc.cpp:127
+ST_3: StgValue_25 (23)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127
+.reset:5  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str6) nounwind
+
+ST_3: tmp_12_i (24)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127
+.reset:6  %tmp_12_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([14 x i8]* @p_str6)
+
+ST_3: StgValue_27 (25)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:148->bytestrm_dwordproc.cpp:127
+.reset:7  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind
+
+ST_3: tmp (26)  [1/1] 1.00ns  loc: bytestrm_dwordproc.cpp:149->bytestrm_dwordproc.cpp:127
 .reset:8  %tmp = call i32 @_ssdm_op_Read.ap_fifo.volatile.i32P(i32* %strm_in_V)
 
 ST_3: tmp_4_cast_i (27)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:149->bytestrm_dwordproc.cpp:127 (grouped into LUT with out node acc)
 .reset:9  %tmp_4_cast_i = sext i32 %tmp to i34
 
-ST_3: acc (28)  [1/1] 1.75ns  loc: bytestrm_dwordproc.cpp:149->bytestrm_dwordproc.cpp:127 (out node of the LUT)
+ST_3: acc (28)  [1/1] 1.76ns  loc: bytestrm_dwordproc.cpp:149->bytestrm_dwordproc.cpp:127 (out node of the LUT)
 .reset:10  %acc = add i34 %tmp_4_cast_i, %acc_i_mid2
 
 ST_3: tmp_6 (32)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:153->bytestrm_dwordproc.cpp:127
 :0  %tmp_6 = call i32 @_ssdm_op_PartSelect.i32.i34.i32.i32(i34 %acc, i32 2, i32 33)
 
-
- <State 4>: 1.43ns
-ST_4: StgValue_28 (18)  [1/1] 0.00ns
-.reset:0  call void (...)* @_ssdm_op_SpecLoopName([26 x i8]* @STREAM_LOOP_DECIMATE)
-
-ST_4: StgValue_29 (19)  [1/1] 0.00ns
-.reset:1  call void (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 372, i64 184)
-
-ST_4: StgValue_30 (23)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127
-.reset:5  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str6) nounwind
-
-ST_4: tmp_12_i (24)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127
-.reset:6  %tmp_12_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([14 x i8]* @p_str6)
-
-ST_4: StgValue_32 (25)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:148->bytestrm_dwordproc.cpp:127
-.reset:7  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind
-
-ST_4: StgValue_33 (33)  [1/1] 1.43ns  loc: bytestrm_dwordproc.cpp:153->bytestrm_dwordproc.cpp:127
+ST_3: StgValue_32 (33)  [1/1] 1.00ns  loc: bytestrm_dwordproc.cpp:153->bytestrm_dwordproc.cpp:127
 :1  call void @_ssdm_op_Write.ap_fifo.volatile.i32P(i32* %strm_out_V, i32 %tmp_6)
 
-ST_4: StgValue_34 (34)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:153->bytestrm_dwordproc.cpp:127
+ST_3: StgValue_33 (34)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:153->bytestrm_dwordproc.cpp:127
 :2  br label %._crit_edge.i
 
-ST_4: empty (36)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:154->bytestrm_dwordproc.cpp:127
+ST_3: empty (36)  [1/1] 0.00ns  loc: bytestrm_dwordproc.cpp:154->bytestrm_dwordproc.cpp:127
 ._crit_edge.i:0  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([14 x i8]* @p_str6, i32 %tmp_12_i)
 
-ST_4: StgValue_36 (38)  [1/1] 0.00ns
+ST_3: StgValue_35 (38)  [1/1] 0.00ns
 ._crit_edge.i:2  br label %0
 
 
- <State 5>: 0.00ns
-ST_5: StgValue_37 (40)  [1/1] 0.00ns
+ <State 4>: 0.00ns
+ST_4: StgValue_36 (40)  [1/1] 0.00ns
 decimate_strm.exit:0  ret void
 
 
@@ -203,27 +199,24 @@ decimate_strm.exit:0  ret void
 ============================================================
 Target clock period: 5ns, clock uncertainty: 0.625ns.
 
- <State 1>: 1.03ns
+ <State 1>: 1.08ns
 The critical path consists of the following:
-	multiplexor before 'phi' operation ('indvar_flatten') with incoming values : ('indvar_flatten_next') [11]  (1.03 ns)
+	multiplexor before 'phi' operation ('indvar_flatten') with incoming values : ('indvar_flatten_next') [11]  (1.08 ns)
 
- <State 2>: 4.33ns
+ <State 2>: 2.92ns
 The critical path consists of the following:
 	'phi' operation ('j') with incoming values : ('j', bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127) [12]  (0 ns)
-	'icmp' operation ('tmp_3_i3', bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127) [20]  (1.4 ns)
-	'select' operation ('j_i_mid2', bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127) [21]  (1.4 ns)
-	'add' operation ('j', bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127) [37]  (1.54 ns)
+	'icmp' operation ('tmp_3_i3', bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127) [20]  (1.04 ns)
+	'select' operation ('j_i_mid2', bytestrm_dwordproc.cpp:147->bytestrm_dwordproc.cpp:127) [21]  (0.84 ns)
+	'icmp' operation ('tmp_5_i', bytestrm_dwordproc.cpp:152->bytestrm_dwordproc.cpp:127) [29]  (1.04 ns)
 
- <State 3>: 3.17ns
+ <State 3>: 3.76ns
 The critical path consists of the following:
-	fifo read on port 'strm_in_V' (bytestrm_dwordproc.cpp:149->bytestrm_dwordproc.cpp:127) [26]  (1.43 ns)
-	'add' operation ('acc', bytestrm_dwordproc.cpp:149->bytestrm_dwordproc.cpp:127) [28]  (1.75 ns)
+	fifo read on port 'strm_in_V' (bytestrm_dwordproc.cpp:149->bytestrm_dwordproc.cpp:127) [26]  (1 ns)
+	'add' operation ('acc', bytestrm_dwordproc.cpp:149->bytestrm_dwordproc.cpp:127) [28]  (1.76 ns)
+	fifo write on port 'strm_out_V' (bytestrm_dwordproc.cpp:153->bytestrm_dwordproc.cpp:127) [33]  (1 ns)
 
- <State 4>: 1.43ns
-The critical path consists of the following:
-	fifo write on port 'strm_out_V' (bytestrm_dwordproc.cpp:153->bytestrm_dwordproc.cpp:127) [33]  (1.43 ns)
-
- <State 5>: 0ns
+ <State 4>: 0ns
 The critical path consists of the following:
 
 
@@ -239,7 +232,6 @@ N/A
 	State 2
 	State 3
 	State 4
-	State 5
 
 
 ============================================================

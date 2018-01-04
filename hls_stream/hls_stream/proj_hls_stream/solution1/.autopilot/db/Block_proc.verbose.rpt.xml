@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Block_proc'" level="0">
-<item name = "Date">Mon Oct 30 15:29:16 2017
+<item name = "Date">Sun Dec 24 20:03:13 2017
 </item>
-<item name = "Version">2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)</item>
+<item name = "Version">2016.4 (Build 1733598 on Wed Dec 14 22:59:20 MST 2016)</item>
 <item name = "Project">proj_hls_stream</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">kintex7</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00, 2.85, 0.62</column>
+<column name="ap_clk">5.00, 2.00, 0.62</column>
 </table>
 </item>
 </section>
@@ -47,11 +47,11 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="DSP">-, -, -, -</column>
-<column name="Expression">-, -, 0, 2</column>
+<column name="Expression">-, -, 0, 1</column>
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">-, -, -, -</column>
 <column name="Memory">-, -, -, -</column>
-<column name="Multiplexer">-, -, -, 45</column>
+<column name="Multiplexer">-, -, -, 17</column>
 <column name="Register">-, -, 17, -</column>
 <specialColumn name="Available">650, 600, 202800, 101400</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0</specialColumn>
@@ -77,16 +77,15 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_56">or, 0, 0, 1, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_done">9, 2, 1, 2</column>
-<column name="ap_return">9, 2, 14, 28</column>
-<column name="bytes_out_len_out_out_blk_n">9, 2, 1, 2</column>
-<column name="real_start">9, 2, 1, 2</column>
-<column name="strm_len_blk_n">9, 2, 1, 2</column>
+<column name="ap_return">14, 2, 14, 28</column>
+<column name="bytes_out_len_out_out_blk_n">1, 2, 1, 2</column>
+<column name="real_start">1, 2, 1, 2</column>
+<column name="strm_len_blk_n">1, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">

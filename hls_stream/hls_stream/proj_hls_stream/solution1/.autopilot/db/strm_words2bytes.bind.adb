@@ -54,7 +54,7 @@
 						</inlineStackInfo>
 						<originalName>words_in.V</originalName>
 						<rtlName></rtlName>
-						<coreName>FIFO_LUTRAM</coreName>
+						<coreName>FSL</coreName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -82,7 +82,7 @@
 						</inlineStackInfo>
 						<originalName></originalName>
 						<rtlName></rtlName>
-						<coreName>FIFO_LUTRAM</coreName>
+						<coreName>FSL</coreName>
 					</Obj>
 					<bitwidth>14</bitwidth>
 				</Value>
@@ -162,14 +162,14 @@
 						<id>10</id>
 						<name>tmp_cast_i_i</name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="11" tracking_level="0" version="0">
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second class_id="12" tracking_level="0" version="0">
 									<count>2</count>
 									<item_version>0</item_version>
@@ -211,14 +211,14 @@
 						<id>11</id>
 						<name></name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -291,14 +291,14 @@
 						<id>14</id>
 						<name>p_0_i_i_load</name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -340,14 +340,14 @@
 						<id>15</id>
 						<name>p_0_cast_i_i</name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -389,14 +389,14 @@
 						<id>16</id>
 						<name>tmp</name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -438,14 +438,14 @@
 						<id>17</id>
 						<name>i_cast_i_i</name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -487,14 +487,14 @@
 						<id>18</id>
 						<name>exitcond_i_i</name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -537,14 +537,14 @@
 						<id>19</id>
 						<name>i</name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -587,14 +587,14 @@
 						<id>20</id>
 						<name></name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -638,14 +638,14 @@
 						<id>25</id>
 						<name>tmp_2_i_i</name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>145</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -688,14 +688,14 @@
 						<id>26</id>
 						<name></name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>145</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -739,14 +739,14 @@
 						<id>28</id>
 						<name>tmp_4</name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>146</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -789,14 +789,14 @@
 						<id>29</id>
 						<name></name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>148</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -869,14 +869,14 @@
 						<id>32</id>
 						<name>tmpbyte</name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>150</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -918,14 +918,14 @@
 						<id>33</id>
 						<name>tmpword_V_1_cast_i_i</name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>151</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -970,14 +970,14 @@
 						<id>34</id>
 						<name></name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>156</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1021,14 +1021,14 @@
 						<id>36</id>
 						<name></name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>151</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1072,14 +1072,14 @@
 						<id>37</id>
 						<name></name>
 						<fileName>./bytestrm_util.h</fileName>
-						<fileDirectory>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
+						<fileDirectory>/home/praful/Documents/learn_hls/hls_stream/hls_stream</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>strm_words2bytes&amp;lt;int, &amp;apos;\x04&amp;apos;, false&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream</first>
+								<first>/home/praful/Documents/learn_hls/hls_stream/hls_stream</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2782,11 +2782,11 @@
 		<item_version>0</item_version>
 		<item class_id="53" tracking_level="0" version="0">
 			<first>2</first>
-			<second>FIFO_LUTRAM</second>
+			<second>FSL</second>
 		</item>
 		<item>
 			<first>3</first>
-			<second>FIFO_LUTRAM</second>
+			<second>FSL</second>
 		</item>
 	</port2core>
 	<node2core>

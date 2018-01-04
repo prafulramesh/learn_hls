@@ -55,37 +55,26 @@ set NewPortList {[
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
 		"CDFG" : "decimate_strm",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
-		"Pipeline" : "None", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
 		"VariableLatency" : "1",
+		"AlignedPipeline" : "0",
+		"UnalignedPipeline" : "0",
+		"ProcessNetwork" : "0",
+		"Combinational" : "0",
+		"ControlExist" : "1",
 		"Port" : [
-			{"Name" : "strm_out_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "0", "DependentChan" : "0",
-				"BlockSignal" : [
-					{"Name" : "strm_out_V_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "strm_in_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0",
-				"BlockSignal" : [
-					{"Name" : "strm_in_V_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "strm_len", "Type" : "None", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0"}]}]}
-
-
-set ArgLastReadFirstWriteLatency {
-	decimate_strm {
-		strm_out_V {Type O LastRead -1 FirstWrite 3}
-		strm_in_V {Type I LastRead 2 FirstWrite -1}
-		strm_len {Type I LastRead 0 FirstWrite -1}}}
+		{"Name" : "strm_out_V", "Type" : "Fifo", "Direction" : "O",
+			"BlockSignal" : [
+			{"Name" : "strm_out_V_blk_n", "Type" : "RtlSignal"}]},
+		{"Name" : "strm_in_V", "Type" : "Fifo", "Direction" : "I",
+			"BlockSignal" : [
+			{"Name" : "strm_in_V_blk_n", "Type" : "RtlSignal"}]},
+		{"Name" : "strm_len", "Type" : "None", "Direction" : "I"}]}]}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "2", "Max" : "375"}
-	, {"Name" : "Interval", "Min" : "2", "Max" : "375"}
-]}
-
-set PipelineEnableSignalInfo {[
-	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
+	{"Name" : "Latency", "Min" : "2", "Max" : "374"}
+	, {"Name" : "Interval", "Min" : "2", "Max" : "374"}
 ]}
 
 set Spec2ImplPortList { 

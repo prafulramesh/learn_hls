@@ -7,6 +7,80 @@
 * The top level function cannot be a template.
 
 
+Chapter: Using C Libraries:
+---------------------------
+
+Header fies don't included in the Path, it will automatically added.
+
+1) Arbitory Precision Data types library:
+-----------------------------------------
+
+Integer Data types:
+In C it is [u]int<precision>, header #include "ap_cin.h"
+In C++ it is ap_[u]int<w>, header #include "ap_int.h"
+
+Arbitary precision fixed point data types:
+Not availble in C
+In C++ ap_[u]fixed<W,I,Q,O,N>, header #include "ap_fixed.h"
+        W: Word length in bits
+        I: No of bits above decimal point
+        Q: Quatization mode:
+		AP_RND	: Round to plus infinity
+		AP_RND_ZERO: Round to zero
+		AP_RND_MIN_INF: Round to minus infinity
+		AP_RND_INF: Round to infinity
+		AP_RND_CONV: Convergent rounding
+		AP_TRN: Trunction to minus infinity
+		AP_TRN_ZERO: Truncation to zero
+	O: Overflow Mode
+		AP_SAT: Saturation
+		AP_SAT_ZERO: Saturation to zero
+		AP_SAT_SYM: Symmetrical saturation
+		AP_WRAP: Wrap around
+		AP_WRAP_SM: Sign magnitude wrap around
+	N: Number of saturation bits in overflow wrap modes
+
+The default max width allowed is 1024 bits. We can override this default by defining the macro AP_INT_MAX_W with positive integer value
+less than or equal to 32768 before inclusion of ap_int.h header file.
+
+2) HLS Stream Library:
+----------------------
+
+Data samples are sent in sequential order
+Requires no address managment.
+Modelling designs that use streaming data can be difficult in C.
+
+Vivado HLS Provide C++ template class hls::stream<>
+
+hls::stream<> class have following attributes:
+	1. Behaves as FIFO of infinit depth
+	2. hls::stream<> top level interface by default implemented by ap_fifo interface.
+	3. Implemented in synthesis as FIFO with depth 1. The optimization directive STREAM is used to change the size.
+
+hls::stream<> class should be always be passed between functions as a C++ reference argument. eg: &my_stream
+
+Global and Local Streams:
+	Local streams are implemented as internal FIFO.
+	Global streams are implemented as internal or IO ports in IP.
+
+Header file: hls_stream.h
+
+hls::stream<T>, the type T may be:
+	Any C++ native data type
+	A vivado HLS library precision type(ap_int<>, ap_ufixed<>)
+	A user defined struct containing either of above types.
+
+Blocking read and writes: 
+	Block excecution if read is attempt on empty stream FIFO and write in full stream FIFO.
+
+
+
+
+
+	
+
+
+
 
 
 

@@ -54,7 +54,7 @@
 						</inlineStackInfo>
 						<originalName></originalName>
 						<rtlName></rtlName>
-						<coreName>FIFO_LUTRAM</coreName>
+						<coreName>FSL</coreName>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -82,7 +82,7 @@
 						</inlineStackInfo>
 						<originalName></originalName>
 						<rtlName></rtlName>
-						<coreName>FIFO_LUTRAM</coreName>
+						<coreName>FSL</coreName>
 					</Obj>
 					<bitwidth>16</bitwidth>
 				</Value>
@@ -547,11 +547,11 @@
 		<item_version>0</item_version>
 		<item class_id="42" tracking_level="0" version="0">
 			<first>2</first>
-			<second>FIFO_LUTRAM</second>
+			<second>FSL</second>
 		</item>
 		<item>
 			<first>3</first>
-			<second>FIFO_LUTRAM</second>
+			<second>FSL</second>
 		</item>
 	</port2core>
 	<node2core>

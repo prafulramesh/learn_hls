@@ -41,7 +41,7 @@ entry:1  %strm_len_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %strm_len)
 </operation>
 
 <operation id="4" st_id="1" stage="1" lat="1">
-<core>FIFO_LUTRAM</core>
+<core>FSL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="0">
 <or_exp><and_exp></and_exp></or_exp>
@@ -71,7 +71,7 @@ entry:3  call void (...)* @_ssdm_op_SpecInterface(i16* %strm_len_out1, [8 x i8]*
 </operation>
 
 <operation id="6" st_id="1" stage="1" lat="1">
-<core>FIFO_LUTRAM</core>
+<core>FSL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="0">
 <or_exp><and_exp></and_exp></or_exp>

@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2017.2</Version>
+<Version>2016.4</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -17,7 +17,7 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>2.45</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.08</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -48,8 +48,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>147</FF>
-<LUT>153</LUT>
+<FF>94</FF>
+<LUT>90</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 </Resources>

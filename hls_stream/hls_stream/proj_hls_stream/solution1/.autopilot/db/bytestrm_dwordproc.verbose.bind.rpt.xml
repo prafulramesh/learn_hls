@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'bytestrm_dwordproc'" level="0">
-<item name = "Date">Mon Oct 30 15:29:16 2017
+<item name = "Date">Sun Dec 24 20:03:13 2017
 </item>
-<item name = "Version">2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)</item>
+<item name = "Version">2016.4 (Build 1733598 on Wed Dec 14 22:59:20 MST 2016)</item>
 <item name = "Project">proj_hls_stream</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">kintex7</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00, 4.33, 0.62</column>
+<column name="ap_clk">5.00, 3.76, 0.62</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">6, 2978, 3, 2978, dataflow</column>
+<column name="">5, 2978, 3, 2978, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_decimate_strm_fu_158">decimate_strm, 2, 375, 2, 375, none</column>
+<column name="grp_decimate_strm_fu_158">decimate_strm, 2, 374, 2, 374, none</column>
 <column name="grp_strm_words2bytes_fu_165">strm_words2bytes, 1, 745, 1, 745, none</column>
 <column name="grp_strm_bytes2words_fu_173">strm_bytes2words, 1, 2977, 1, 2977, none</column>
 <column name="dwords_in_len_cast_l_Block_proc_fu_181">Block_proc, 0, 0, 0, 0, none</column>

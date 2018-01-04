@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="bytestrm_dwordproc" name="proj_hls_stream">
+<project xmlns="com.autoesl.autopilot.project" name="proj_hls_stream" top="bytestrm_dwordproc">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

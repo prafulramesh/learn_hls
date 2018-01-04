@@ -43,7 +43,7 @@ set SCTraceOption "all"
 set TargetInfo "xc7k160t:fbg484:-1"
 set SourceFiles {sc {} c ../../bytestrm_dwordproc.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile {/home/vkchcp0030/Documents/learn_hls/hls_stream/hls_stream/proj_hls_stream/solution1/solution1.directive}
+set DirectiveFile {/home/praful/Documents/learn_hls/hls_stream/hls_stream/proj_hls_stream/solution1/solution1.directive}
 set TBFiles {verilog ../../bytestrm_dwordproc_test.cpp bc ../../bytestrm_dwordproc_test.cpp vhdl ../../bytestrm_dwordproc_test.cpp sc ../../bytestrm_dwordproc_test.cpp cas ../../bytestrm_dwordproc_test.cpp c {}}
 set SpecLanguage "C"
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

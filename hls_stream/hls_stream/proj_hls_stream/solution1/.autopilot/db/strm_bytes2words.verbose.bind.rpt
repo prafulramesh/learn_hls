@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'strm_bytes2words'
 ================================================================
-* Date:           Mon Oct 30 15:29:16 2017
+* Date:           Sun Dec 24 20:03:13 2017
 
-* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Version:        2016.4 (Build 1733598 on Wed Dec 14 22:59:20 MST 2016)
 * Project:        proj_hls_stream
 * Solution:       solution1
 * Product family: kintex7
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |   5.00|      1.96|        0.62|
+    |ap_clk  |   5.00|      1.55|        0.62|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -83,7 +83,7 @@ IsGatedGlobalClock: 0
 	2  / true
 * FSM state operations: 
 
- <State 1>: 1.43ns
+ <State 1>: 1.08ns
 ST_1: StgValue_4 (4)  [1/1] 0.00ns
 entry:0  call void (...)* @_ssdm_op_SpecInterface(i32* %words_out_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str9, [1 x i8]* @p_str10, [1 x i8]* @p_str11, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str12, [1 x i8]* @p_str13)
 
@@ -93,17 +93,17 @@ entry:1  call void (...)* @_ssdm_op_SpecInterface(i8* %bytes_in_V, [5 x i8]* @p_
 ST_1: StgValue_6 (6)  [1/1] 0.00ns
 entry:2  call void (...)* @_ssdm_op_SpecInterface(i16* %bytestrm_len, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str72, i32 0, i32 0, [1 x i8]* @p_str73, [1 x i8]* @p_str74, [1 x i8]* @p_str75, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str76, [1 x i8]* @p_str77)
 
-ST_1: bytestrm_len_read (7)  [1/1] 1.43ns
+ST_1: bytestrm_len_read (7)  [1/1] 1.00ns
 entry:3  %bytestrm_len_read = call i16 @_ssdm_op_Read.ap_fifo.i16P(i16* %bytestrm_len)
 
 ST_1: StgValue_8 (8)  [1/1] 0.00ns
 entry:4  call void (...)* @_ssdm_op_SpecInterface(i8* %bytes_in_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind
 
-ST_1: StgValue_9 (9)  [1/1] 1.03ns  loc: ./bytestrm_util.h:116
+ST_1: StgValue_9 (9)  [1/1] 1.08ns  loc: ./bytestrm_util.h:116
 entry:5  br label %0
 
 
- <State 2>: 1.96ns
+ <State 2>: 1.55ns
 ST_2: r_V (11)  [1/1] 0.00ns  loc: ./bytestrm_util.h:116
 :0  %r_V = phi i24 [ 0, %entry ], [ %phitmp_cast_i, %_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit._crit_edge.i ]
 
@@ -113,10 +113,10 @@ ST_2: i_i (12)  [1/1] 0.00ns
 ST_2: tmp (13)  [1/1] 0.00ns  loc: ./bytestrm_util.h:116
 :2  %tmp = trunc i16 %i_i to i2
 
-ST_2: exitcond_i (14)  [1/1] 1.96ns  loc: ./bytestrm_util.h:116
+ST_2: exitcond_i (14)  [1/1] 1.55ns  loc: ./bytestrm_util.h:116
 :3  %exitcond_i = icmp eq i16 %i_i, %bytestrm_len_read
 
-ST_2: i (15)  [1/1] 1.68ns  loc: ./bytestrm_util.h:116
+ST_2: i (15)  [1/1] 1.46ns  loc: ./bytestrm_util.h:116
 :4  %i = add i16 1, %i_i
 
 ST_2: StgValue_15 (16)  [1/1] 0.00ns  loc: ./bytestrm_util.h:116
@@ -125,14 +125,14 @@ ST_2: StgValue_15 (16)  [1/1] 0.00ns  loc: ./bytestrm_util.h:116
 ST_2: tmp_8 (21)  [2/2] 0.00ns  loc: ./bytestrm_util.h:118
 _ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.i:3  %tmp_8 = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %bytes_in_V)
 
-ST_2: tmp_1_i (23)  [1/1] 1.40ns  loc: ./bytestrm_util.h:125
+ST_2: tmp_1_i (23)  [1/1] 0.85ns  loc: ./bytestrm_util.h:125
 _ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.i:5  %tmp_1_i = icmp eq i2 %tmp, -1
 
 ST_2: StgValue_18 (34)  [1/1] 0.00ns
 .exit:0  ret void
 
 
- <State 3>: 1.43ns
+ <State 3>: 1.00ns
 ST_3: StgValue_19 (18)  [1/1] 0.00ns  loc: ./bytestrm_util.h:116
 _ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.i:0  call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str4) nounwind
 
@@ -151,7 +151,7 @@ _ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.i:4  %r_V_1 = call
 ST_3: StgValue_24 (24)  [1/1] 0.00ns  loc: ./bytestrm_util.h:125
 _ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit.i:6  br i1 %tmp_1_i, label %1, label %_ZrsILi32ELb0EE11ap_int_baseIXT_EXT0_EXleT_Li64EEERKS1_i.exit._crit_edge.i
 
-ST_3: StgValue_25 (26)  [1/1] 1.43ns  loc: ./bytestrm_util.h:126
+ST_3: StgValue_25 (26)  [1/1] 1.00ns  loc: ./bytestrm_util.h:126
 :0  call void @_ssdm_op_Write.ap_fifo.volatile.i32P(i32* %words_out_V, i32 %r_V_1)
 
 ST_3: StgValue_26 (27)  [1/1] 0.00ns  loc: ./bytestrm_util.h:126
@@ -179,6 +179,7 @@ STG Binding:
 - Is combinational: 0
 - Is one-state seq: 0
 - Is datapath-only: 0
+- Is clock enabled: 0
 - Is pipelined: 0
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
@@ -927,9 +928,9 @@ StgValue_30       (br               ) [ 0111]
 |----------|------------------------------|---------|---------|
 | Operation|        Functional Unit       |    FF   |   LUT   |
 |----------|------------------------------|---------|---------|
-|    add   |           i_fu_137           |    53   |    21   |
+|    add   |           i_fu_137           |    0    |    16   |
 |----------|------------------------------|---------|---------|
-|   icmp   |       exitcond_i_fu_132      |    0    |    8    |
+|   icmp   |       exitcond_i_fu_132      |    0    |    6    |
 |          |        tmp_1_i_fu_143        |    0    |    1    |
 |----------|------------------------------|---------|---------|
 |   read   | bytestrm_len_read_read_fu_86 |    0    |    0    |
@@ -944,7 +945,7 @@ StgValue_30       (br               ) [ 0111]
 |----------|------------------------------|---------|---------|
 |partselect|         tmp_5_fu_158         |    0    |    0    |
 |----------|------------------------------|---------|---------|
-|   Total  |                              |    53   |    30   |
+|   Total  |                              |    0    |    23   |
 |----------|------------------------------|---------|---------|
 
 Memories:
@@ -968,9 +969,9 @@ N/A
 |-------------|------|------|------|--------||---------||---------|
 |     Comp    |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
 |-------------|------|------|------|--------||---------||---------|
-| r_V_reg_105 |  p0  |   2  |  24  |   48   ||    9    |
+| r_V_reg_105 |  p0  |   2  |  24  |   48   ||    24   |
 |-------------|------|------|------|--------||---------||---------|
-|    Total    |      |      |      |   48   ||  1.029  ||    9    |
+|    Total    |      |      |      |   48   ||  1.085  ||    24   |
 |-------------|------|------|------|--------||---------||---------|
 
 
@@ -979,10 +980,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |    -   |   53   |   30   |
+|  Function |    -   |    0   |   23   |
 |   Memory  |    -   |    -   |    -   |
-|Multiplexer|    1   |    -   |    9   |
+|Multiplexer|    1   |    -   |   24   |
 |  Register |    -   |   97   |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    1   |   150  |   39   |
+|   Total   |    1   |   97   |   47   |
 +-----------+--------+--------+--------+

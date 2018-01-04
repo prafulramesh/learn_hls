@@ -41,7 +41,7 @@ entry:1  call void (...)* @_ssdm_op_SpecInterface(i16* %strm_len, [8 x i8]* @ap_
 </operation>
 
 <operation id="4" st_id="1" stage="1" lat="1">
-<core>FIFO_LUTRAM</core>
+<core>FSL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="0">
 <or_exp><and_exp></and_exp></or_exp>
@@ -101,7 +101,7 @@ entry:5  %bytes_out_len = call i14 @_ssdm_op_BitConcatenate.i14.i12.i2(i12 %tmp,
 </operation>
 
 <operation id="8" st_id="1" stage="1" lat="1">
-<core>FIFO_LUTRAM</core>
+<core>FSL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="0">
 <or_exp><and_exp></and_exp></or_exp>
